@@ -11,6 +11,7 @@ import Accordions from "./Accordians";
 import { useRouter } from "next/navigation";
 import CancelIcon from "@mui/icons-material/Cancel";
 import emailjs from "emailjs-com";
+import ChatWithUS from "./ChatWithUS";
 
 const Navbar = ({ List1 }) => {
   const router = useRouter();
@@ -206,12 +207,20 @@ const Navbar = ({ List1 }) => {
           </div>
         </form>{" "}
       </div>
-      <div className=" px-3 lg:px-6">
-        <span>
-          <Link href="/" className=" text-3xl sm:text-5xl ">
-            <Image src={logo} height={200} width={200} />
+      <div className=" px-3 lg:px-6 flex flex-row">
+        <span className=" w-[200px]">
+          <Link href="/" className=" text-3xl sm:text-5xl w-[200px] ">
+            <Image
+              src={logo}
+              height={200}
+              width={200}
+              className=" w-[200px] h-[200px]"
+            />
           </Link>
         </span>
+        <div className=" flex flex-col items-center justify-center gap-2">
+          <ChatWithUS />
+        </div>
       </div>
       <nav className=" flex w-[100%] justify-start md:justify-around items-center md:px-16">
         <ul className=" hidden md:flex md:items-center md:top-0 md:left-0 md:w-[100%] md:text-xs lg:text-sm ">
