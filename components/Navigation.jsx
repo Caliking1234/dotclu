@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import CancelIcon from "@mui/icons-material/Cancel";
 import emailjs from "emailjs-com";
 import ChatWithUS from "./ChatWithUS";
+import { Toaster, toast } from "sonner";
 
 const Navbar = ({ List1 }) => {
   const router = useRouter();
@@ -40,7 +41,7 @@ const Navbar = ({ List1 }) => {
         setEmails("");
         setPhoneno("");
         setQuery("");
-        alert("Data Sent");
+        // alert("Data Sent");
       })
       .catch((err) => {
         console.log(err);
@@ -171,6 +172,7 @@ const Navbar = ({ List1 }) => {
           <div className="relative w-3/4">
             <textarea
               name="user_query"
+              required
               value={Query}
               onChange={(e) => {
                 setQuery(e.target.value);
@@ -201,9 +203,17 @@ const Navbar = ({ List1 }) => {
                 <b className=" text-red-500"> *</b>
               </span>
             </div>
-            <button className="bg-blue-500 w-fit py-3 px-3 mx-auto rounded-lg hover:bg-blue-600  transition-all duration-100 ease-in">
+            <button
+              onClick={() => {
+                toast.success(
+                  "We have received you Query and We will reach out soon"
+                );
+              }}
+              className="bg-blue-500 w-fit py-3 px-3 mx-auto rounded-lg hover:bg-blue-600  transition-all duration-100 ease-in"
+            >
               Submit
             </button>
+            <Toaster richColors position="top-center" />
           </div>
         </form>{" "}
       </div>

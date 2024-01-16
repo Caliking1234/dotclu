@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ContacUsGif from "@assets/contactus.gif";
 import emailjs from "emailjs-com";
+import { Toaster, toast } from "sonner";
 
 const Form2 = () => {
   const [Name, setName] = useState("");
@@ -21,12 +22,12 @@ const Form2 = () => {
         "P7_MtSDARHReL2JVO"
       )
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setName("");
         setEmails("");
         setPhoneno("");
         setQuery("");
-        alert("Data Sent");
+        // alert("Data Sent");
       })
       .catch((err) => {
         console.log(err);
@@ -145,9 +146,17 @@ const Form2 = () => {
                   <b className=" text-red-500"> *</b>
                 </span>
               </div>
-              <button className="bg-blue-500 w-fit py-3 px-3 mx-auto rounded-lg hover:bg-blue-600  transition-all duration-100 ease-in">
+              <button
+                onClick={() => {
+                  toast.success(
+                    "We have received you Query and We will reach out soon"
+                  );
+                }}
+                className="bg-blue-500 w-fit py-3 px-3 mx-auto rounded-lg hover:bg-blue-600  transition-all duration-100 ease-in"
+              >
                 Submit
               </button>
+              <Toaster richColors position="top-center" />
             </div>
           </form>
         </div>
