@@ -1,5 +1,5 @@
 "use client";
-import React, {useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "@components/Footer";
 import Navigation from "@components/Navigation";
 import "@styles/global.css";
@@ -23,11 +23,10 @@ const RootLayout = ({ children }) => {
     AOS.init({ duration: 2000 });
   }, []);
 
-  const [cookie,setCookie] = useState(null);
-  useEffect(()=>{
-    setCookie(false)
-  },[])
-
+  const [cookie, setCookie] = useState(null);
+  useEffect(() => {
+    setCookie(false);
+  }, []);
 
   const List1 = [
     {
@@ -35,7 +34,7 @@ const RootLayout = ({ children }) => {
       module: [
         {
           name: " IT-Consulting Services",
-          link: " /services/itconsultingservices", 
+          link: " /services/itconsultingservices",
         },
         {
           name: "Custom Software Development",
@@ -43,23 +42,23 @@ const RootLayout = ({ children }) => {
         },
         {
           name: " Cloud Computing Solutions",
-          link: "/services/cloudcomputingsolutions",   
+          link: "/services/cloudcomputingsolutions",
         },
         {
           name: " Cyber Security Services",
-          link: " /services/cybersecurityservices",  
+          link: " /services/cybersecurityservices",
         },
         {
           name: " IT Support and Managed Services",
-          link: "/services/ITsupport&managedservices",  
+          link: "/services/ITsupport&managedservices",
         },
         {
           name: " Data Analytics and Business Intelligence",
-          link: "/services/DataAnalyticsandBusinessIntelligence", 
+          link: "/services/DataAnalyticsandBusinessIntelligence",
         },
         {
           name: "IT Training and Education Services",
-          link: "/services/ITTrainingandEducation",    
+          link: "/services/ITTrainingandEducation",
         },
         {
           name: "AR/VR Services",
@@ -147,7 +146,32 @@ const RootLayout = ({ children }) => {
   return (
     <>
       <html lang="en">
-      <link rel="icon" href="/Images/favicon.ico"  sizes="32x32"/>
+        <link rel="icon" href="/Images/favicon.ico" sizes="32x32" />
+        <head>
+          <title>Dotclu</title>
+          <meta name="description" content="One stop to all your IT problems" />
+          <meta property="og:title" content="Dotclu" />
+          <meta
+            property="og:description"
+            content="One stop to all your IT problems"
+          />
+          <link rel="icon" href="/Images/favicon.ico" />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: `
+               {
+                  "@context": "http://schema.org",
+                  "@type": "Organization",
+                  "name": "Dotclu",
+                  "url": "https://www.dotclu.com",
+                  "logo": "/logo.png",
+                  "description": "One stop to all your IT problems"
+               }
+            `,
+            }}
+          />
+        </head>
         <body className="">
           <main className={monts.className}>
             <Navigation List1={List1} />
