@@ -24,7 +24,7 @@ const Maincontent = () => {
           Insurance industry:
         </p> */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5">
-            SolVision Product Development
+            DotVision Product Development
           </h1>
 
           <p className="">
@@ -49,7 +49,7 @@ const Maincontent = () => {
               className="text-3xl sm:text-4xl md:text-3xl font-bold py-16"
               data-aos="fade-up"
             >
-              SolVision Product Features:
+              DotVision Product Features:
             </h1>
 
             <div className=" py-5 md:px-16 w-full ">
@@ -70,7 +70,7 @@ const Maincontent = () => {
                   <br />
                   <p className="py-5 md:text-sm">
                     {" "}
-                    SolVision can train an AI model in minutes through
+                    DotVision can train an AI model in minutes through
                     Dotclu&apos;s unique Rapid AI Model Training technology.
                   </p>
                 </div>
@@ -86,7 +86,7 @@ const Maincontent = () => {
                   </span>
                   <br />
                   <p className="py-5 md:text-sm">
-                    SolVision can learn new items from as few as 1-5 image
+                    DotVision can learn new items from as few as 1-5 image
                     samples, saving users hours of exhaustive annotations.
                   </p>
                 </div>
@@ -101,7 +101,7 @@ const Maincontent = () => {
                   </span>
                   <br />
                   <p className="py-5 md:text-sm">
-                    SolVision offers outstanding performance and versatility for
+                    DotVision offers outstanding performance and versatility for
                     a range of AI inspection applications, providing tailored
                     automation solutions for specific industry needs.
                   </p>
@@ -117,7 +117,7 @@ const Maincontent = () => {
                   </span>
                   <br />
                   <p className="py-5 md:text-sm">
-                    SolVision&apos;s user-friendly UI lets users label multiple
+                    DotVision&apos;s user-friendly UI lets users label multiple
                     defect types simultaneously, making it ideal for
                     classification tasks with multiple defects and features
                   </p>
@@ -149,7 +149,7 @@ const Maincontent = () => {
               className="text-3xl sm:text-4xl md:text-3xl font-bold py-16"
               data-aos="fade-up"
             >
-              SolVision Applications:
+              DotVision Applications:
             </h1>
 
             <div className=" py-5 md:px-16 w-full flex flex-col md:flex-row-reverse gap-8">
@@ -172,7 +172,7 @@ const Maincontent = () => {
                   <p className="py-5 md:text-sm">
                     {" "}
                     Overcoming the limitations of ordinary defect inspection
-                    systems, SolVision detects defects in real-time with speed
+                    systems, DotVision detects defects in real-time with speed
                     and precision, ensuring greater inspection efficiency and
                     higher standards of product quality.
                   </p>
@@ -189,7 +189,7 @@ const Maincontent = () => {
                   </span>
                   <br />
                   <p className="py-5 md:text-sm">
-                    SolVision enhances quality inspection through AI-driven
+                    DotVision enhances quality inspection through AI-driven
                     evaluations that can identify defects or imperfections
                     swiftly in real-time. It helps ensure only the highest
                     quality items reach consumers, supporting compliance with
@@ -226,7 +226,7 @@ const Maincontent = () => {
                   <br />
                   <p className="py-5 md:text-sm">
                     {" "}
-                    With just a few sample images, SolVision uses advanced deep
+                    With just a few sample images, DotVision uses advanced deep
                     learning technology to quickly and accurately recognize and
                     categorize different items much faster and with greater
                     precision than traditional inspection methods
@@ -242,7 +242,7 @@ const Maincontent = () => {
                   <br />
                   <p className="py-5 md:text-sm">
                     Through advanced AI models trained on just a few image
-                    samples, SolVision enables automated visual inspection to
+                    samples, DotVision enables automated visual inspection to
                     detect missing components, ensuring effective quality
                     control and defect management on high-capacity production
                     lines with unmatched accuracy and efficiency.
@@ -280,7 +280,7 @@ const Maincontent = () => {
                   <br />
                   <p className="py-5 md:text-sm">
                     {" "}
-                    SolVision&apos;s OCR tool utilizes its built-in image
+                    DotVision&apos;s OCR tool utilizes its built-in image
                     processing capabilities to recognize numbers, characters,
                     and text, seamlessly extracting this information into a
                     digitized format.
@@ -310,7 +310,7 @@ const Maincontent = () => {
           </div>
 
           <p className="py-5" data-aos="fade-up">
-            At SolVision, we are dedicated to delivering cutting-edge vision
+            At DotVision, we are dedicated to delivering cutting-edge vision
             software solutions that empower industries, enhance precision, and
             drive innovation. With our advanced AI capabilities and expertise in
             inspection technologies, we transform your quality control processes

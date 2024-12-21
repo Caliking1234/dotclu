@@ -33,8 +33,8 @@ const RootLayout = ({ children }) => {
       title: "Product",
       module: [
         {
-          name: "SolVision",
-          link: "/Product/SolVision",
+          name: "DotVision",
+          link: "/Product/DotVision",
         },
         {
           name: "Meta-AI/VI",
