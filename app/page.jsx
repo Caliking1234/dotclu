@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Longcard from "@components/Longcard";
 import ImgSlider from "@components/ImgSlider";
@@ -18,6 +18,23 @@ import gifyy from "../public/Images/LandingPage.gif";
 import Image from "next/image";
 
 const home = () => {
+  const Prod = [
+    {
+      serviceName: "DotVision",
+      serviceContent:
+        " Our expert developers conduct in-depth assessments of your existing CV...",
+      serviceImg:
+        "https://img.freepik.com/free-photo/man-glasses-augmented-reality-blue_53876-105040.jpg?t=st=1734762698~exp=1734766298~hmac=9467dde894fe954267b5edbc49d92f8daac6386eaae9ac27230d9c21b1db5bcf&w=996",
+      serviceLink: "/product/dotvision",
+    },
+    {
+      serviceName: "Dot-AI/VI",
+      serviceContent:
+        " Our expert consultants conduct in-depth assessments of your existing IT...",
+      serviceImg: img1,
+      serviceLink: "/services/itconsultingservices",
+    },
+  ];
   const content = [
     {
       serviceName: "IT Consulting Services:",
@@ -87,6 +104,36 @@ const home = () => {
   return (
     <main>
       <ImgSlider />
+      <div className=" w-[90%] mx-auto py-24">
+        <p
+          className=" my-2 pb-4 text-center text-3xl md:text-4xl lg:text-8xl font-bold"
+          data-aos="fade-up"
+        >
+          Our Products
+        </p>
+        {/* <p
+          className="  text-lg sm:text-2xl text-center  pb-4"
+          data-aos="fade-up"
+        >
+          We offer a comprehensive range of advanced IT solutions and services
+          to meet the diverse technological needs of businesses and individuals.
+          Our portfolio includes:
+        </p> */}
+      </div>
+
+      <div className="py-16 lg:py-16 px-8 mx-auto w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5">
+        {Prod.map((service, index) => {
+          return (
+            <MainContainer
+              key={index}
+              serviceName={service.serviceName}
+              serviceContent={service.serviceContent}
+              Img={service.serviceImg}
+              serviceLink={service.serviceLink}
+            />
+          );
+        })}
+      </div>
       <div className=" w-[90%] mx-auto py-24">
         <p
           className=" my-2 pb-4 text-center text-3xl md:text-4xl lg:text-8xl font-bold"

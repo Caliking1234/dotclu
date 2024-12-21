@@ -30,15 +30,15 @@ const RootLayout = ({ children }) => {
 
   const List1 = [
     {
-      title: "Product",
+      title: "Products",
       module: [
         {
           name: "DotVision",
-          link: "/Product/DotVision",
+          link: "/product/dotvision",
         },
         {
-          name: "Meta-AI/VI",
-          link: "/About/ContactUs",
+          name: "Dot-AI/VI",
+          link: "/product/dotaivi",
         },
       ],
     },
