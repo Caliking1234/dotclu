@@ -38,7 +38,7 @@ const RootLayout = ({ children }) => {
         },
         {
           name: "Dot-AI/VI",
-          link: "/Product/DotAiVi",
+          link: "/Product/Dotarvr",
         },
       ],
     },

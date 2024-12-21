@@ -33,7 +33,7 @@ const home = () => {
         " Our expert consultants conduct in-depth assessments of your existing IT...",
       serviceImg:
         "https://img.freepik.com/free-photo/man-wearing-smart-glasses-showing-holographic-screen-futuristic-technology_53876-95816.jpg?t=st=1734763050~exp=1734766650~hmac=94022dea4ed4f4963a4903a2de3ee6b51b793d4c445f970464d67c01770e15d7&w=996",
-      serviceLink: "/Product/DotAiVi",
+      serviceLink: "/Product/Dotarvr",
     },
   ];
   const content = [
