@@ -34,11 +34,11 @@ const RootLayout = ({ children }) => {
       module: [
         {
           name: "DotVision",
-          link: "/product/dotvision",
+          link: "/product/DotVision",
         },
         {
           name: "Dot-AI/VI",
-          link: "/product/dotaivi",
+          link: "/product/DotAiVi",
         },
       ],
     },
