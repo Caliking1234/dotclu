@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import Piclongcard from "./Piclongcard";
 import Maincontent from "./Maincontent";
 
-const AboutUs = () => {
+const DotVision = () => {
   return (
     <div className="">
       <div className="relative">
@@ -38,4 +38,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default DotVision;
