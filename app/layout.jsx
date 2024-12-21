@@ -30,6 +30,19 @@ const RootLayout = ({ children }) => {
 
   const List1 = [
     {
+      title: "Product",
+      module: [
+        {
+          name: "SolVision",
+          link: "/Product/SolVision",
+        },
+        {
+          name: "Meta-AI/VI",
+          link: "/About/ContactUs",
+        },
+      ],
+    },
+    {
       title: "Services",
       module: [
         {
