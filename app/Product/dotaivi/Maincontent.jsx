@@ -147,7 +147,7 @@ const Maincontent = () => {
               <div className=" w-full md:w-[40%] h-full my-auto">
                 <img
                   className="aspect-[14/13] w-full object-cover rounded-2xl"
-                  src="https://img.freepik.com/free-vector/grunge-certified-seal-stamp-rubber-look_78370-664.jpg?t=st=1734760450~exp=1734764050~hmac=56606a6bf2ca8fa9abddb28d407a3961b1ee0843a59ea0bccea975395320208c&w=740"
+                  src="https://img.freepik.com/free-photo/businesswoman-using-vr-simulator_74855-1122.jpg?t=st=1734764576~exp=1734768176~hmac=b0748a52a384dcef6fa678a54f206a27a93c48dbe422d024e49af35031b92e64&w=996"
                   alt=""
                   data-aos="fade-up"
                 />
@@ -259,7 +259,7 @@ const Maincontent = () => {
               Maintenance and Support:
             </h1> */}
 
-            <div className=" py-5 md:px-16 w-full flex flex-col md:flex-row-reverse gap-8">
+            {/* <div className=" py-5 md:px-16 w-full flex flex-col md:flex-row-reverse gap-8">
               <div className=" w-full md:w-[40%] h-full my-auto">
                 <img
                   className="aspect-[14/13] w-full object-cover rounded-2xl"
@@ -268,7 +268,7 @@ const Maincontent = () => {
                   alt=""
                 />
               </div>
-              {/* <div className="w-full md:w-[60%]">
+              <div className="w-full md:w-[60%]">
                 <div
                   className="w-full text-base sm:text-xl text-slate-600 pb-4 py-10"
                   data-aos="fade-up"
@@ -305,8 +305,8 @@ const Maincontent = () => {
                     maximizing user satisfaction.
                   </p>
                 </div>
-              </div> */}
-            </div>
+              </div>
+            </div> */}
           </div>
 
           <p className="py-5" data-aos="fade-up">
