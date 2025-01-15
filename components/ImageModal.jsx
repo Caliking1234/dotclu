@@ -174,7 +174,7 @@ const ScrollSlider = () => {
           className="h-[600vh] w-screen relative flex flex-col"
         >
           {[
-            "/images/carmanufacture.webp",
+            "/images/carmanufacture.jpg",
             "/images/carlogistics.webp",
             "/images/caraftermarket.webp",
             "/images/carinsurance.webp",
