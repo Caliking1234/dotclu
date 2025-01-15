@@ -86,10 +86,31 @@ const Navbar = ({ List1 }) => {
     console.warn("nav-change");
     return setnavOpen(false);
   };
+
+  const [scrolling, setScrolling] = useState(false);
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <header
       id="nav"
-      className=" bg-[#000000]  z-50 h-[80px] w-screen flex items-center justify-center md:gap-0 lg:gap-5 fixed top-0 left-0  text-white"
+      className={`z-50 h-[80px] w-screen flex items-center justify-center md:gap-0 lg:gap-5 fixed top-0 left-0 text-white transition-all duration-300 ${
+        scrolling ? "bg-black" : "bg-transparent"
+      }`}
     >
       <div
         ref={fromRef}

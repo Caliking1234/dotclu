@@ -16,6 +16,8 @@ import img9 from "../public/Images/ai.png";
 
 import gifyy from "../public/Images/LandingPage.gif";
 import Image from "next/image";
+import ScrollImages from "@components/ImageModal";
+import ScrollSlider from "@components/ImageModal";
 
 const home = () => {
   const Prod = [
@@ -103,8 +105,19 @@ const home = () => {
   ];
 
   return (
-    <main>
-      <ImgSlider />
+    <main className="w-full">
+      <div className="w-full h-[90vh] overflow-hidden">
+        <video
+          src="/ai.mp4"
+          alt="abc"
+          width={3000}
+          className=" w-full h-[90vh] object-cover"
+          autoPlay
+          muted
+          loop
+        />
+      </div>
+
       <div className=" w-[90%] mx-auto py-24">
         <p
           className=" my-2 pb-4 text-center text-3xl md:text-4xl lg:text-8xl font-bold"
@@ -135,6 +148,7 @@ const home = () => {
           );
         })}
       </div>
+      <ScrollSlider />
       <div className=" w-[90%] mx-auto py-24">
         <p
           className=" my-2 pb-4 text-center text-3xl md:text-4xl lg:text-8xl font-bold"

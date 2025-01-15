@@ -188,7 +188,7 @@ const RootLayout = ({ children }) => {
         <body className="">
           <main className={monts.className}>
             <Navigation List1={List1} />
-            <div
+            {/* <div
               className={
                 cookie
                   ? "hidden"
@@ -221,7 +221,7 @@ const RootLayout = ({ children }) => {
                   Accept All
                 </button>
               </div>
-            </div>
+            </div> */}
             {children}
             <Footer List1={List1} />
           </main>
