@@ -118,7 +118,6 @@ const ScrollSlider = () => {
           start: "top 80px",
           end: "+=500vh",
           scrub: 1,
-          markers: true,
         },
       }
     );
