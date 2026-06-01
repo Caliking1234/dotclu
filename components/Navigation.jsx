@@ -33,7 +33,7 @@ const Navbar = ({ List1 }) => {
         "service_ymay2qu",
         "template_8n87dwi",
         e.target,
-        "P7_MtSDARHReL2JVO"
+        "P7_MtSDARHReL2JVO",
       )
       .then((res) => {
         console.log(res);
@@ -227,7 +227,7 @@ const Navbar = ({ List1 }) => {
             <button
               onClick={() => {
                 toast.success(
-                  "We have received you Query and We will reach out soon"
+                  "We have received you Query and We will reach out soon",
                 );
               }}
               className="bg-blue-500 w-fit py-3 px-3 mx-auto rounded-lg hover:bg-blue-600  transition-all duration-100 ease-in"
@@ -243,8 +243,8 @@ const Navbar = ({ List1 }) => {
           <Link href="/" className=" text-3xl sm:text-5xl w-[200px] ">
             <Image
               src={logo}
-              height={200}
-              width={200}
+              height={150}
+              width={100}
               className=" w-[200px] h-[200px]"
             />
           </Link>
