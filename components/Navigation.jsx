@@ -245,7 +245,7 @@ const Navbar = ({ List1 }) => {
               src={logo}
               height={150}
               width={100}
-              className=" w-[100px] h-[125px]"
+              className=" w-[150px] h-[80px]"
             />
           </Link>
         </span>
