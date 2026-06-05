@@ -4,8 +4,7 @@ import Image from "next/image";
 const Piclongcard = () => {
   const people = [
     {
-      imageUrl:
-        "https://img.freepik.com/free-vector/mobile-testing-concept-illustration_114360-1585.jpg?t=st=1734761174~exp=1734764774~hmac=3c4438a0a245b6b245ae6707c8be77da247db7a3d9c186597a02e70a00e8ff66&w=740",
+      imageUrl: "/Images/hawk-ops.jpg",
     },
   ];
 

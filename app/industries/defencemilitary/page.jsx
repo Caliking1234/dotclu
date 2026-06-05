@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Slide1 from "../../../public/Images/government.png";
+import Slide1 from "../../../public/Images/hawk-banner.jpg";
 import Image from "next/image";
 import Longcard from "./longcard";
 import { useEffect, useState } from "react";

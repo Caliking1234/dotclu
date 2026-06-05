@@ -2,163 +2,122 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
+const services = [
+  {
+    title: "IT Consulting Services",
+    description:
+      "In-depth assessments of your existing IT infrastructure aligned with your business objectives. Customised roadmaps that reduce cost and improve performance.",
+    href: "/services/itconsultingservices",
+    accent: "from-cyan-500/20 to-transparent",
+    border: "hover:border-cyan-500/50",
+    tag: "Strategy",
+  },
+  {
+    title: "Custom Software Development",
+    description:
+      "Tailored software built to your exact requirements — from prototype to production. Skilled developers who take ownership of delivery, not just code.",
+    href: "/services/customsoftwaredevelopment",
+    accent: "from-violet-500/20 to-transparent",
+    border: "hover:border-violet-500/50",
+    tag: "Engineering",
+  },
+  {
+    title: "Cloud Computing Solutions",
+    description:
+      "Cloud migration, infrastructure design, and management — including private cloud and hybrid deployments for sensitive or regulated environments.",
+    href: "/services/cloudcomputingsolutions",
+    accent: "from-blue-500/20 to-transparent",
+    border: "hover:border-blue-500/50",
+    tag: "Infrastructure",
+  },
+  {
+    title: "Cybersecurity Services",
+    description:
+      "Threat assessments, vulnerability scanning, secure architecture design, and incident response — with defence-grade security principles at the core.",
+    href: "/services/cybersecurityservices",
+    accent: "from-rose-500/20 to-transparent",
+    border: "hover:border-rose-500/50",
+    tag: "Security",
+  },
+  {
+    title: "IT Support & Managed Services",
+    description:
+      "Proactive monitoring, fast incident response, and dedicated support for live systems. We keep your infrastructure running so you can focus on your mission.",
+    href: "/services/ITsupport&managedservices",
+    accent: "from-amber-500/20 to-transparent",
+    border: "hover:border-amber-500/50",
+    tag: "Operations",
+  },
+  {
+    title: "Data Analytics & Business Intelligence",
+    description:
+      "Unlock actionable insights from operational data using advanced analytics, dashboards, and ML pipelines. Turn data into decisions.",
+    href: "/services/DataAnalyticsandBusinessIntelligence",
+    accent: "from-emerald-500/20 to-transparent",
+    border: "hover:border-emerald-500/50",
+    tag: "Analytics",
+  },
+  {
+    title: "IT Training & Education",
+    description:
+      "Technology training programmes and workshops to upskill teams — from software development fundamentals to advanced AI and cloud topics.",
+    href: "/services/ITTrainingandEducation",
+    accent: "from-purple-500/20 to-transparent",
+    border: "hover:border-purple-500/50",
+    tag: "Learning",
+  },
+  {
+    title: "AR / VR Services",
+    description:
+      "Immersive augmented and virtual reality applications for training, simulation, and enterprise use cases — including defence-sector XR deployments.",
+    href: "/services/ArVrservices",
+    accent: "from-pink-500/20 to-transparent",
+    border: "hover:border-pink-500/50",
+    tag: "Immersive Tech",
+  },
+];
+
 const Cards = () => {
   const router = useRouter();
   return (
-    <div className=" w-full py-10 px-5">
-      <div className="">
-        <div className=" w-[90%] mx-auto py-5">
-          <p
-            className=" my-2 pb-4 text-3xl md:text-4xl lg:text-8xl font-bold"
+    <section className="w-full bg-slate-950 py-10 px-5">
+      <div className="py-16 lg:py-16 w-[95%] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+        {services.map((svc, i) => (
+          <div
+            key={i}
+            className={`group relative flex flex-col rounded-xl border border-slate-800 bg-slate-900 ${svc.border} cursor-pointer transition-all duration-300 overflow-hidden shadow-lg`}
             data-aos="fade-up"
+            onClick={() => router.push(svc.href)}
           >
-            Our Services
-          </p>
-          <p
-            className=" w-[90%] sm:w-[80%] text-lg sm:text-2xl  pb-4"
-            data-aos="fade-up"
-          >
-            We offer a comprehensive range of advanced IT solutions and services
-            to meet the diverse technological needs of businesses and
-            individuals. Our portfolio includes:
-          </p>
-        </div>
-        <div className="py-16 lg:py-16 w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div
-            className=" w-full md:w-[100%] h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-indigo-800 from-10% via-sky-600 via-30% to-blue-300 to-90% hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100"
-            data-aos="fade-up" onClick={() => router.push("/services/itconsultingservices")}
-          >
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              IT Consulting Services:
-            </h2>
-            <p className=" text-xs sm:text-sm text-white px-3 py-2">
-              Our expert consultants conduct in-depth assessments of your
-              existing IT infrastructure, aligning them with your business
-              objectives. Through our customized recommendations...
-            </p>
-            <span className="  w-[100%] text-right pr-4 text-white" > Learn more </span>
+            <div className={`absolute inset-0 bg-gradient-to-br ${svc.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
+            <div className="relative z-10 p-6 flex flex-col flex-1">
+              <div className="flex items-start justify-between mb-4">
+                <h2 className="text-lg lg:text-xl font-semibold text-white group-hover:text-white transition-colors duration-200 leading-snug pr-4">
+                  {svc.title}
+                </h2>
+                <span className="flex-shrink-0 text-[11px] font-semibold text-slate-400 bg-slate-800 border border-slate-700 px-2 py-1 rounded-full tracking-wide">
+                  {svc.tag}
+                </span>
+              </div>
+              <p className="text-sm leading-6 text-slate-400 flex-1 mb-6">
+                {svc.description}
+              </p>
+              <span className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors duration-200">
+                Learn more
+                <svg
+                  className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </div>
           </div>
-
-          <div
-            className=" w-full md:w-[100%] h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-pink-800 via-pink-500 to-pink-500 hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100"
-            data-aos="fade-up" onClick={() => router.push("/services/customsoftwaredevelopment")}
-          >
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              Custom Software Development:
-            </h2>
-            <p className=" text-xs sm:text-sm text-white px-3 py-2">
-              With our cutting-edge software development expertise, we create
-              tailored solutions that cater to your unique business
-              requirements. Our skilled developers...
-            </p>
-            <span className=" w-[100%] text-right pr-4 text-white"> Learn more</span>
-            
-          </div>
-
-          <div
-            className=" w-full h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer  gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-emerald-800 from-10% via-emerald-500 via-30% to-emerald-500 to-90% hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100"
-            data-aos="fade-up" onClick={() => router.push("/services/cloudcomputingsolutions")}
-          >
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              Cloud Computing Solutions:
-            </h2>
-
-            <p className=" text-xs sm:text-sm text-white px-3 py-2">
-              Experience the power of cloud technology through our comprehensive
-              range of services. We facilitate seamless migration of your IT
-              infrastructure to the cloud...
-            </p>
-            <span className="  w-[100%] text-right pr-4 text-white"> Learn more</span>
-
-           
-          </div>
-
-          <div
-            className=" w-full h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-green-800 from-10% via-green-500 via-30% to-green-400 to-90% hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100"
-            data-aos="fade-up" onClick={() => router.push("/services/cybersecurityservices")}
-          >
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              Cybersecurity Services:
-            </h2>
-
-            <p className=" text-xs sm:text-sm text-white px-3 py-2">
-              Safeguarding your digital assets is our top priority. Our
-              cybersecurity solutions include thorough threat assessments,
-              vulnerability scanning...
-            </p>
-            <span className="  w-[100%] text-right pr-4 text-white"> Learn more</span>
-
-           
-          </div>
-
-          <div
-            className=" w-full h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-pink-800 from-10% via-pink-500 via-30% to-pink-300 to-90% hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100"
-            data-aos="fade-up" onClick={() => router.push("/services/ITsupport&managedservices")}
-          >
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              IT Support and Managed Services:
-            </h2>
-
-            <p className=" text-xs sm:text-sm text-white px-3 py-2">
-              Count on our dedicated support team for prompt assistance and
-              proactive monitoring of your IT infrastructure. We handle
-              troubleshooting, hardware and software issues...
-            </p>
-            <span className="  w-[100%] text-right pr-4 text-white"> Learn more</span>
-
-            
-          </div>
-
-          <div
-            className=" w-full h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-red-900 from-10% via-yellow-800 via-30% to-yellow-500 to-90% hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100"
-            data-aos="fade-up" onClick={() => router.push("/services/DataAnalyticsandBusinessIntelligence")}
-          >
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              Data Analytics and Business Intelligence:
-            </h2>
-
-            <p className=" text-xs sm:text-sm text-white px-3 py-2">
-              Unlock valuable insights from your data to make informed
-              decisions. Our data analytics and business intelligence solutions
-              employ advanced tools and techniques...
-            </p>
-            <span className="  w-[100%] text-right pr-4 text-white"> Learn more</span>
-
-            
-          </div>
-
-          <div
-            className=" w-full h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-red-500 from-10% via-orange-500 via-30% to-yellow-500 to-90% hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100"
-            data-aos="fade-up" onClick={() => router.push("/services/ITTrainingandEducation")}
-          >
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              IT Training and Education:
-            </h2>
-
-            <p className=" text-xs sm:text-sm text-white px-3 py-2">
-              Stay ahead in the dynamic technology landscape with our training
-              programs and workshops. We empower individuals...
-            </p>
-            <span className="  w-[100%] text-right pr-4 text-white"> Learn more</span>
-
-            
-          </div>
-
-          <div className=" w-full h-[30vh] md:h-[30vh] lg:p-8 cursor-pointer gap-3 md:gap-0 mx-auto flex flex-col items-center rounded-md shadow-md bg-gradient-to-r from-rose-900 from-10% via-rose-700 via-30% to-rose-500 to-90% hover:shadow-black hover:scale-[1.01] transition-all duration-300 delay-100" data-aos="fade-up" onClick={() => router.push("/services/ArVrservices")}>
-            <h2 className=" w-full text-left px-3 py-2 text-xl lg:text-2xl text-white">
-              AR/VR Services:
-            </h2>
-
-            <p className=" text-xs sm:text-sm text-white lg:px-8 px-3 py-2">
-              We offer cutting-edge Augmented Reality (AR) and Virtual Reality
-              (VR) solutions to enhance user experiences and create immersive
-              ...
-            </p>
-            <span className="  w-[100%] text-right pr-4 text-white"> Learn more</span>
-          </div>
-        </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

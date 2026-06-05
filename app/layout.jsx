@@ -131,16 +131,16 @@ const RootLayout = ({ children }) => {
   return (
     <>
       <html lang="en">
-        <link rel="icon" href="/logo.png" type="image/png" sizes="32x32" />
         <head>
-          <title>Ideaved</title>
+          <title>Ideaved Technologies</title>
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+          <link rel="shortcut icon" href="/favicon.svg" />
           <meta name="description" content="Advanced AI solutions for Defence, Government, and Enterprise. Personalized training and risk assessment systems powered by cutting-edge artificial intelligence." />
-          <meta property="og:title" content="Ideaved - Defence AI Solutions" />
+          <meta property="og:title" content="Ideaved Technologies - Defence AI Solutions" />
           <meta
             property="og:description"
             content="Advanced AI solutions for Defence, Government, and Enterprise. Personalized training and risk assessment systems."
           />
-          <link rel="icon" href="/logo.png" type="image/png" />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -148,7 +148,7 @@ const RootLayout = ({ children }) => {
                {
                   "@context": "http://schema.org",
                   "@type": "Organization",
-                  "name": "ideaved",
+                  "name": "Ideaved Technologies",
                   "url": "https://www.ideaved.com",
                   "logo": "/logo.png",
                   "description": "Advanced AI solutions for Defence, Government, and Enterprise. Specializing in personalized training, risk assessment, and intelligent operations."
@@ -157,7 +157,7 @@ const RootLayout = ({ children }) => {
             }}
           />
         </head>
-        <body className="">
+        <body className="bg-slate-950">
           <main className={monts.className}>
             <Navigation List1={List1} />
             {/* <div

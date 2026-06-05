@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Maincontent = () => {
   return (
@@ -104,10 +105,12 @@ const Maincontent = () => {
 
             <div className="py-5 md:px-16 w-full flex flex-col md:flex-row-reverse gap-8">
               <div className="w-full md:w-[40%] h-full my-auto">
-                <img
+                <Image
+                  src="/Images/hawk-ops.jpg"
+                  alt="IAF HAWK Flight Operations"
+                  width={600}
+                  height={560}
                   className="aspect-[14/13] w-full object-cover rounded-2xl"
-                  src="https://img.freepik.com/free-photo/futuristic-ai-technology-microchip-advanced-innovation-digital-remix_53876-124694.jpg?t=st=1734760727~exp=1734764327~hmac=cf3cee3d2f61a8784059abde285fda1d8355c8484e9c104c0d8cc448b55a6e18&w=996"
-                  alt="HAWK IAF Operations"
                   data-aos="fade-up"
                 />
               </div>

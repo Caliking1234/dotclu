@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Longcard from "@components/Longcard";
-import ImgSlider from "@components/ImgSlider";
 import Ourmission from "@components/Ourmission";
 import MainContainer from "./MainContainer";
 import img1 from "../public/Images/itcon.webp";
@@ -9,12 +8,9 @@ import img2 from "../public/Images/csdimg2.jpeg";
 import img3 from "../public/Images/cloudimg.jpg";
 import img4 from "../public/Images/cse.webp";
 import img5 from "../public/Images/its.jpg";
-import img6 from "../public/Images/dataa.jpg";
-import img7 from "../public/Images/te.webp";
-import img8 from "../public/Images/arvr9.jpg";
 import img9 from "../public/Images/ai.png";
+import heroBg from "../public/Images/ai3.webp";
 
-import gifyy from "../public/Images/LandingPage.gif";
 import Image from "next/image";
 import ScrollImages from "@components/ImageModal";
 import ScrollSlider from "@components/ImageModal";
@@ -24,17 +20,15 @@ const home = () => {
     {
       serviceName: "HAWK-Flight Operations",
       serviceContent:
-        " Advanced flight operations management system designed and developed by ideaved for seamless aircraft scheduling, crew management, and maintenance tracking...",
-      serviceImg:
-        "https://img.freepik.com/free-photo/drone-flying-near-cityscape_23-2149257804.jpg?t=st=1734763050~exp=1734766650~hmac=94022dea4ed4f4963a4903a2de3ee6b51b793d4c445f970464d67c01770e15d7&w=996",
+        "Advanced flight operations management system for military aviation training — aircraft scheduling, trainee rostering, simulator allocation, and real-time ops dashboard. Deployed with the Indian Air Force.",
+      serviceImg: "/Images/hawk-banner.jpg",
       serviceLink: "/Product/DotVision",
     },
     {
       serviceName: "Dot-AI/VI",
       serviceContent:
-        " Our expert consultants conduct in-depth assessments of your existing IT...",
-      serviceImg:
-        "https://img.freepik.com/free-photo/man-wearing-smart-glasses-showing-holographic-screen-futuristic-technology_53876-95816.jpg?t=st=1734763050~exp=1734766650~hmac=94022dea4ed4f4963a4903a2de3ee6b51b793d4c445f970464d67c01770e15d7&w=996",
+        "AI-powered visual intelligence and augmented reality platform for immersive training simulations, field reconnaissance, and real-time data overlay in operational environments.",
+      serviceImg: "/Images/arvr9.jpg",
       serviceLink: "/Product/Dotarvr",
     },
   ];
@@ -84,18 +78,16 @@ const home = () => {
   ];
 
   return (
-    <main className="w-full">
+    <main className="w-full bg-slate-950 text-white">
       <div className="w-full h-[90vh] overflow-hidden relative">
-        <video
-          src="/ai.mp4"
-          alt="abc"
-          width={3000}
-          className="w-full h-[90vh] object-cover"
-          autoPlay
-          muted
-          loop
+        <Image
+          src={heroBg}
+          alt="Ideaved hero"
+          fill
+          priority
+          className="object-cover animate-ken-burns"
         />
-        <div className="absolute inset-0 bg-black/55 flex flex-col justify-center items-start px-10 md:px-24">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/30 flex flex-col justify-center items-start px-10 md:px-24">
           <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-cyan-400 font-semibold mb-4" data-aos="fade-up">
             Trusted by Indian Armed Forces
           </p>
@@ -130,22 +122,22 @@ const home = () => {
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto py-24">
-        <p className="text-center text-sm tracking-[0.25em] uppercase text-cyan-600 font-semibold mb-4" data-aos="fade-up">
+      <div className="w-[90%] mx-auto pt-24 pb-10">
+        <p className="text-center text-sm tracking-[0.25em] uppercase text-cyan-400 font-semibold mb-4" data-aos="fade-up">
           Deployed with Indian Armed Forces
         </p>
         <p
-          className="my-2 pb-4 text-center text-3xl md:text-4xl lg:text-7xl font-bold"
+          className="my-2 pb-4 text-center text-3xl md:text-4xl lg:text-7xl font-bold text-white"
           data-aos="fade-up"
         >
           Our Products
         </p>
-        <p className="text-lg sm:text-xl text-center text-slate-500 pb-4 max-w-3xl mx-auto" data-aos="fade-up">
+        <p className="text-lg sm:text-xl text-center text-slate-400 pb-4 max-w-3xl mx-auto" data-aos="fade-up">
           Purpose-built defence and aviation platforms proven in real operational environments with the Indian Army and Indian Air Force.
         </p>
       </div>
 
-      <div className="py-16 lg:py-16 px-8 mx-auto w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5">
+      <div className="py-8 px-8 mx-auto w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5">
         {Prod.map((service, index) => {
           return (
             <MainContainer
@@ -159,25 +151,25 @@ const home = () => {
         })}
       </div>
       <ScrollSlider />
-      <div className="w-[90%] mx-auto py-24">
-        <p className="text-center text-sm tracking-[0.25em] uppercase text-cyan-600 font-semibold mb-4" data-aos="fade-up">
+      <div className="w-[90%] mx-auto pt-24 pb-10">
+        <p className="text-center text-sm tracking-[0.25em] uppercase text-cyan-400 font-semibold mb-4" data-aos="fade-up">
           Enterprise-Grade Capabilities
         </p>
         <p
-          className="my-2 pb-4 text-center text-3xl md:text-4xl lg:text-7xl font-bold"
+          className="my-2 pb-4 text-center text-3xl md:text-4xl lg:text-7xl font-bold text-white"
           data-aos="fade-up"
         >
           Our Services
         </p>
         <p
-          className="text-lg sm:text-xl text-center text-slate-500 pb-4 max-w-3xl mx-auto"
+          className="text-lg sm:text-xl text-center text-slate-400 pb-4 max-w-3xl mx-auto"
           data-aos="fade-up"
         >
           End-to-end technology services for defence, government, and enterprise — engineered for security, reliability, and operational scale.
         </p>
       </div>
 
-      <div className="py-16 lg:py-16 px-8 w-[100%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
+      <div className="py-8 px-8 w-[100%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
         {content.map((service, index) => {
           return (
             <MainContainer
@@ -192,18 +184,32 @@ const home = () => {
       </div>
 
       <Ourmission />
-      <div
-        className=" w-full h-[80vh] flex flex-col items-center justify-around"
-        data-aos="fade-up"
-      >
-        <span className=" text-6xl font bold text-gray-500 font-bold mb-[-20px]">
-          Connect
-        </span>
-        <Image src={gifyy} width={500} height={500} />
-        <span className=" text-6xl font bold text-gray-500 font-bold mt-[-20px]">
-          With Us
-        </span>
-      </div>
+
+      {/* Clients strip */}
+      <section className="bg-slate-950 border-t border-slate-800 py-16 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-xs tracking-[0.3em] uppercase text-cyan-400 font-semibold mb-10" data-aos="fade-up">
+            Trusted by
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up">
+            {[
+              { name: "Indian Army", sub: "Ministry of Defence" },
+              { name: "Indian Air Force", sub: "Ministry of Defence" },
+              { name: "Abbott India", sub: "Healthcare" },
+              { name: "IndiGo Airlines", sub: "Aviation" },
+            ].map((client, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center justify-center rounded-xl border border-slate-800 bg-slate-900 py-6 px-4 gap-2"
+              >
+                <p className="text-white font-semibold text-sm text-center leading-snug">{client.name}</p>
+                <p className="text-slate-500 text-xs">{client.sub}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Longcard
         a={"4"}
         b={"Projects delivered for Indian Army & Indian Air Force"}

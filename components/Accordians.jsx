@@ -1,94 +1,41 @@
-import * as React from "react";
-import { useEffect, useState } from "react";
-import { styled } from "@mui/material/styles";
-import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
-import MuiAccordion from "@mui/material/Accordion";
-import MuiAccordionSummary from "@mui/material/AccordionSummary";
-import MuiAccordionDetails from "@mui/material/AccordionDetails";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
-  border: `2px solid ${theme.palette.divider}`,
-  "&:not(:last-child)": {
-    borderBottom: 0,
-  },
-  "&:before": {
-    display: "none",
-  },
-}));
-
-const AccordionSummary = styled((props) => (
-  <MuiAccordionSummary
-    expandIcon={
-      <ArrowForwardIosSharpIcon
-        sx={{ fontSize: "1rem" }}
-        style={{ color: "white" }}
-      />
-    }
-    {...props}
-  />
-))(({ theme }) => ({
-  backgroundColor:
-    theme.palette.mode === "dark"
-      ? "rgba(255, 255, 255, .05)"
-      : "rgba(0, 0, 0, .03)",
-  flexDirection: "row",
-  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
-    transform: "rotate(90deg)",
-  },
-  "& .MuiAccordionSummary-content": {
-    marginLeft: theme.spacing(1),
-  },
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
-  borderTop: "1px solid rgba(0, 0, 0, .125)",
-}));
-
-export default function Accordions({List1,navOpen,setnavFalse}) {
-  const [expanded, setExpanded] = React.useState("");
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
-  };
+export default function Accordions({ List1, setnavFalse }) {
+  const [expanded, setExpanded] = useState(null);
 
   return (
-    <div
-      className="bg-black"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        backgroundColor: "black",
-      }}
-    >
+    <div className="flex flex-col w-full pt-4">
       {List1.map((item, index) => (
-        <Accordion
-          className="  text-xs w-full"
-          style={{ backgroundColor: "black", color: "white" }}
-          expanded={expanded === "panel" + (index + 1)}
-          onChange={handleChange("panel" + (index + 1))}
-        >
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <div className=" w-full ">
-              <h1 className=" w-full text-xs text-center">{item.title}</h1>
-            </div>
-          </AccordionSummary>
-          <AccordionDetails
-            style={{ backgroundColor: "white", color: "black" }}
+        <div key={index} className="border-b border-slate-800">
+          <button
+            onClick={() => setExpanded(expanded === index ? null : index)}
+            className="w-full flex items-center justify-between px-6 py-4 text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors duration-200"
           >
-            {item.module?.map((info, i) => {
-              return (
-                <div onClick={setnavFalse} className=" w-full px-2 py-3 border-b-[1px] border-solid border-black">
-                  <Link href={info.link}>{info.name}</Link>
-                </div>
-              );
-            })}
-          </AccordionDetails>
-        </Accordion>
+            {item.title}
+            <KeyboardArrowDownIcon
+              fontSize="small"
+              className={`transition-transform duration-200 ${expanded === index ? "rotate-180 text-cyan-400" : ""}`}
+            />
+          </button>
+
+          {expanded === index && (
+            <div className="pb-2">
+              {item.module?.map((info, i) => (
+                <Link
+                  key={i}
+                  href={info.link}
+                  onClick={setnavFalse}
+                  className="block px-8 py-2.5 text-sm text-slate-400 hover:text-cyan-400 hover:bg-slate-800/50 transition-all duration-150"
+                >
+                  {info.name}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
       ))}
     </div>
   );

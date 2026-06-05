@@ -1,49 +1,39 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
-import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const DropDown = ({ title, list1 }) => {
-  const [IsOpen, setIsOpen] = useState(false);
-  const divRef = useRef();
-
-  useEffect(() => {
-    window.addEventListener("click", (e) => {
-      if (e.target !== divRef.current) {
-        setIsOpen(false);
-      }
-    });
-  });
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=" group w-full h-[80px] flex justify-center items-center">
-      <button
-        ref={divRef}
-        onClick={() => setIsOpen(!IsOpen)}
-        className=" text-xs w-fit"
-      >
+    <div
+      className="relative h-[72px] flex items-center"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      <button className="flex items-center gap-0.5 text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors duration-200 px-3">
         {title}
+        <KeyboardArrowDownIcon
+          fontSize="small"
+          className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+        />
       </button>
-        <div
-          className=" invisible group-hover:visible top-[82px] text-sm z-50 w-screen py-5 px-5 grid grid-cols-3 h-fit bg-gray-100 rounded-md text-[#1A374D] absolute left-0"
-        >
-          {list1.map((module, i) => {
-            return (
-              <div
-                key={i}
-                className="  flex flex-row-reverse items-center justify-center text-[0.9rem] w-full py-2 mx-auto hover:bg-gray-300 transition-all duration-300"
-              >
-                <Link
-                  className=" relative mx-auto flex flex-row-reverse items-center justify-center"
-                  href={module.link}
-                >
-                  {module.name}
-                </Link>
-              </div>
-            );
-          })}
+
+      {isOpen && (
+        <div className="absolute top-[72px] left-1/2 -translate-x-1/2 min-w-[200px] bg-slate-900 border border-slate-700 rounded-xl shadow-2xl shadow-black/40 z-50 py-2 overflow-hidden">
+          <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-cyan-500/0 via-cyan-500 to-cyan-500/0" />
+          {list1.map((module, i) => (
+            <Link
+              key={i}
+              href={module.link}
+              className="block px-5 py-2.5 text-sm text-slate-300 hover:text-cyan-400 hover:bg-slate-800 transition-all duration-150"
+            >
+              {module.name}
+            </Link>
+          ))}
         </div>
+      )}
     </div>
   );
 };

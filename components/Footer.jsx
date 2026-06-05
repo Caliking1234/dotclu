@@ -1,55 +1,56 @@
 import React from "react";
 import Link from "next/link";
-import logo from "../public/Images/dotClu-removebg-preview.png"
 import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import logo from "../public/Images/dotClu-removebg-preview.png";
 import FooterLinks from "./FooterLinks";
+
 function Footer({ List1 }) {
   return (
-    <>
-      <div className="bg-black h-1/2 w-full flex flex-col justify-around items-center py-4 px-5 md:px-8">
-        <div className=" px-0 py-0 sm:p-2 ">
-          <ul>
-            <Link href="/" className=" text-3xl sm:text-5xl ">
-              <Image src={logo} height={300} width={300} />
+    <footer className="bg-slate-950 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+          <div className="md:col-span-2 flex flex-col gap-5">
+            <Link href="/">
+              <Image src={logo} height={100} width={160} className="w-[140px]" alt="Ideaved" />
             </Link>
-          </ul>
-        </div>
-        <div className=" py-5 md:p-5 grid grid-cols-2 md:grid-cols-4 w-full gap-5">
-          {List1.map((items, index) => {
-            return (
-              <div key={index} className=" md:mx-auto w-full md:w-[70%]">
+            <p className="text-slate-400 text-sm leading-6 max-w-xs">
+              India-based AI and defence technology company. Headquartered in Ghaziabad, development team in Jaipur. Delivering mission-critical systems for the Indian Army and Indian Air Force.
+            </p>
+            <div className="flex flex-col gap-1 text-sm">
+              <a href="mailto:info.ideaved@gmail.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                info.ideaved@gmail.com
+              </a>
+              <a href="tel:+918377827753" className="text-slate-400 hover:text-white transition-colors">
+                +91 83778 27753
+              </a>
+            </div>
+          </div>
+
+          <div className="md:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-8">
+            {List1.map((items, index) => (
+              <div key={index}>
                 <FooterLinks title={items.title} list1={items.module} />
               </div>
-            );
-          })}
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-slate-500 text-xs">
+            © 2026 Ideaved Technologies LLP. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6 text-xs text-slate-500">
+            <Link href="/privacy&policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-slate-700">|</span>
+            <Link href="/term&condition" className="hover:text-white transition-colors">
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center text-center  py-5 bg-black">
-        <h1 className=" text-white text-xs mr-[2px]">©2026</h1>
-        <h1 className=" text-white text-xs hover:text-blue-500">
-          All rights reserved -Ideaved Technologies LLP{" "}
-        </h1>
-      </div>
-      <div className="flex flex-row justify-center items-center text-center  py-5 bg-black border-t-[1px] border-white">
-        <Link
-          href="/privacy&policy"
-          className=" cursor-pointer text-xs text-white"
-        >
-          Privacy & Policy
-        </Link>
-        <div className=" h-[20px] w-[2px] mx-[12px] bg-white"></div>
-        <Link
-          href="/term&condition"
-          className=" cursor-pointer text-xs text-white"
-        >
-          Term & Condition
-        </Link>
-      </div>
-    </>
+    </footer>
   );
 }
 
