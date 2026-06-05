@@ -29,9 +29,9 @@ function Footer({ List1 }) {
         </div>
       </div>
       <div className="flex flex-row justify-center items-center text-center  py-5 bg-black">
-        <h1 className=" text-white text-xs mr-[2px]">©2023-2024</h1>
+        <h1 className=" text-white text-xs mr-[2px]">©2026</h1>
         <h1 className=" text-white text-xs hover:text-blue-500">
-          All rights reserved Dotclu{" "}
+          All rights reserved -Ideaved Technologies LLP{" "}
         </h1>
       </div>
       <div className="flex flex-row justify-center items-center text-center  py-5 bg-black border-t-[1px] border-white">

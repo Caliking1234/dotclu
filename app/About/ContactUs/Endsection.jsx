@@ -13,16 +13,12 @@ const Endsection = () => {
                 <div className='text-gray-500 px-2' data-aos="fade-up">
                     <div>
                         <h1 className='text-2xl text-gray-700'>Email</h1>
-                        <p className='text-base py-2'><b>Sales:</b> ask@Dotclu.com</p>
-                        <p className='text-base py-2'><b>General:</b> info@Dotclu.com</p>
-
+                        <p className='text-base py-2'><b>General & Sales:</b> info.ideaved@gmail.com</p>
                     </div>
                 </div>
                 <div className='text-gray-500 px-2' data-aos="fade-up">
-                    <h1 className='text-2xl text-gray-700'>Calls</h1>
-                    <p className='text-base py-2'><b>North America:</b> 1.844.469.8900</p>
-                    <p className='text-base py-2'><b>Asia:</b>+91.124.469.8900</p>
-                    <p className='text-base py-2'><b>Europe:</b>+44.203.807.6911</p>
+                    <h1 className='text-2xl text-gray-700'>Call Us</h1>
+                    <p className='text-base py-2'><b>India:</b> +91 83778 27753</p>
                 </div>
                 <div className='text-gray-500 px-2' data-aos="fade-up">
                     <h1 className='text-2xl text-gray-700'>Socials</h1>

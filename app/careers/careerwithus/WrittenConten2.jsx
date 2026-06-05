@@ -9,7 +9,7 @@ const WrittenContent2 = () => {
       <div className="py-10 w-full sm:w-[85%]" data-aos="fade-up">
         <p className=" sm:ml-16 text-sm sm:text-xl">
           If you are excited about the prospect of joining our team, we invite
-          you to submit your resume and cover letter to [email protected] Please
+          you to submit your resume and cover letter to info.ideaved@gmail.com Please
           include the position you are applying for in the subject line. We
           review every application carefully and will reach out to qualified
           candidates for further steps in the recruitment process.<br/><br/> Join us and

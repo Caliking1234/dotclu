@@ -29,14 +29,14 @@ const page = () => {
       <div className="mx-auto p-8 lg:p-24">
         <p className="text-2xl lg:text-5xl py-5 font-medium pr-2">
           {" "}
-          Careers at Dotclu
+          Careers at Ideaved
         </p>
         <br />
         <br />
         <div className="text-left lg:px-24 lg:text-justify">
           <p className=" text-xl md:text-2xl lg:text-2xl">
             Are you passionate about technology and driven by innovation? Join
-            the talented team at Dotclu and embark on a rewarding career in the
+            the talented team at Ideaved and embark on a rewarding career in the
             dynamic world of IT. We are constantly on the lookout for skilled
             professionals who are eager to make a difference, push boundaries,
             and shape the future of technology.
@@ -65,7 +65,7 @@ const page = () => {
               </h1>
 
               <p className="border-b-[1px] border-solid border-slate-800">
-                At Dotclu, we foster a culture of innovation and collaboration.
+                At Ideaved, we foster a culture of innovation and collaboration.
                 We believe that great ideas come from diverse perspectives and
                 teamwork. You'll have the opportunity to work with a talented
                 and passionate team, exchanging ideas, and collaborating on

@@ -29,7 +29,7 @@ const Maincontent = () => {
           </h1>
 
           <p className="">
-            At Dotclu, we specialize in providing cutting-edge Augmented Reality
+            At Ideaved, we specialize in providing cutting-edge Augmented Reality
             (AR) and Virtual Reality (VR) solutions that unlock new
             possibilities for businesses across industries. Our team of experts
             combines creativity, technical expertise, and industry knowledge to

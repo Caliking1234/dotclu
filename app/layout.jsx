@@ -6,7 +6,7 @@ import "@styles/global.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import logo from "../public/Images/favicon.ico";
-import { Montserrat, Poppins } from "@next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 
 const monts = Montserrat({
   subsets: ["latin"],
@@ -33,7 +33,7 @@ const RootLayout = ({ children }) => {
       title: "Products",
       module: [
         {
-          name: "DotVision",
+          name: "HAWK-Flight Operations",
           link: "/Product/DotVision",
         },
         {
@@ -46,40 +46,28 @@ const RootLayout = ({ children }) => {
       title: "Services",
       module: [
         {
-          name: " IT-Consulting Services",
-          link: " /services/itconsultingservices",
+          name: "Defence AI Solutions",
+          link: "/services/defenceaisolutions",
         },
         {
           name: "Custom Software Development",
           link: "/services/customsoftwaredevelopment",
         },
         {
-          name: " Cloud Computing Solutions",
+          name: "AI & Generative AI",
+          link: "/services/AI&GenerativeAI",
+        },
+        {
+          name: "Cyber Security Services",
+          link: "/services/cybersecurityservices",
+        },
+        {
+          name: "Cloud Computing Solutions",
           link: "/services/cloudcomputingsolutions",
         },
         {
-          name: " Cyber Security Services",
-          link: " /services/cybersecurityservices",
-        },
-        {
-          name: " IT Support and Managed Services",
+          name: "IT Support & Managed Services",
           link: "/services/ITsupport&managedservices",
-        },
-        {
-          name: " Data Analytics and Business Intelligence",
-          link: "/services/DataAnalyticsandBusinessIntelligence",
-        },
-        {
-          name: "IT Training and Education Services",
-          link: "/services/ITTrainingandEducation",
-        },
-        {
-          name: "AR/VR Services",
-          link: "/services/ArVrservices",
-        },
-        {
-          name: "AI & Generative AI",
-          link: "/services/AI&GenerativeAI",
         },
       ],
     },
@@ -87,20 +75,8 @@ const RootLayout = ({ children }) => {
       title: "Industries",
       module: [
         {
-          name: "Banking & Finance Industry",
-          link: "/industries/bankingindustry",
-        },
-        {
-          name: "E-Commerce Industry",
-          link: "/industries/ecommerceindustry",
-        },
-        {
-          name: "Education Sector",
-          link: "/industries/educationindustry",
-        },
-        {
-          name: "Insurance Industry",
-          link: "/industries/financeindustry",
+          name: "Defence & Military",
+          link: "/industries/defencemilitary",
         },
         {
           name: "Government Sector",
@@ -113,10 +89,6 @@ const RootLayout = ({ children }) => {
         {
           name: "Manufacturing Industry",
           link: "/industries/manufacturingindustry",
-        },
-        {
-          name: "Retail Industry",
-          link: "/industries/retailindustry",
         },
       ],
     },
@@ -159,16 +131,16 @@ const RootLayout = ({ children }) => {
   return (
     <>
       <html lang="en">
-        <link rel="icon" href="/Images/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/logo.png" type="image/png" sizes="32x32" />
         <head>
-          <title>Dotclu</title>
-          <meta name="description" content="One stop to all your IT problems" />
-          <meta property="og:title" content="Dotclu" />
+          <title>Ideaved</title>
+          <meta name="description" content="Advanced AI solutions for Defence, Government, and Enterprise. Personalized training and risk assessment systems powered by cutting-edge artificial intelligence." />
+          <meta property="og:title" content="Ideaved - Defence AI Solutions" />
           <meta
             property="og:description"
-            content="One stop to all your IT problems"
+            content="Advanced AI solutions for Defence, Government, and Enterprise. Personalized training and risk assessment systems."
           />
-          <link rel="icon" href="/Images/favicon.ico" />
+          <link rel="icon" href="/logo.png" type="image/png" />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -176,10 +148,10 @@ const RootLayout = ({ children }) => {
                {
                   "@context": "http://schema.org",
                   "@type": "Organization",
-                  "name": "Dotclu",
-                  "url": "https://www.dotclu.com",
+                  "name": "ideaved",
+                  "url": "https://www.ideaved.com",
                   "logo": "/logo.png",
-                  "description": "One stop to all your IT problems"
+                  "description": "Advanced AI solutions for Defence, Government, and Enterprise. Specializing in personalized training, risk assessment, and intelligent operations."
                }
             `,
             }}

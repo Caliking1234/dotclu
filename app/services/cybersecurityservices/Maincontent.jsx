@@ -22,24 +22,18 @@ const Maincontent = () => {
         <div className="w-full p-8 lg:px-24 sm:p-12 md:p-20" data-aos="fade-up">
          
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5">
-            Cybersecurity Solutions
+            Enterprise Cybersecurity
           </h1>
 
           <p className="">
-            At Dotclu, we provide comprehensive IT services specializing in
-            cybersecurity. Our dedicated team of cybersecurity experts is
-            committed to protecting your business from evolving cyber threats
-            and safeguarding your critical assets. With our advanced
-            technologies and proactive approach, we offer a range of
-            cybersecurity solutions to mitigate risks and ensure the resilience
-            of your digital infrastructure.
+            ideaved provides cybersecurity services engineered around the security requirements of defence and government systems. From secure architecture design and threat detection to incident response, we apply the same security discipline used in our Indian Army and IAF projects to every client engagement. Based in India (Ghaziabad & Jaipur), we are an MSME with a zero-breach record across all live deployments.
           </p>
 
       
 
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-3xl font-bold py-16" data-aos="fade-up">
-              Cybersecurity Assessment and Consulting:
+              Advanced Threat Detection & Response:
             </h1>
 
             <div className=" py-5 md:px-16 w-full  flex flex-col md:flex-row gap-8">

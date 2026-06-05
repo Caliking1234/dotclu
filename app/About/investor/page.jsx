@@ -31,17 +31,7 @@ const page = () => {
         <br />
         <div className="text-left lg:px-24 lg:text-justify border-b-[0.1px] py-4 lg:py-16 border-solid border-slate-700" data-aos="fade-up">
           <p className=" text-xl md:text-2xl lg:text-2xl">
-            Dotclu was founded in 2009 by a team of technology enthusiasts with
-            a wealth of knowledge, talent, and ambition acquired from over a
-            century of collective experience. Since then, they have built us up,
-            led us to an IPO, and grown our company into an international
-            workforce of 1,800+ across Asia, North America, and Europe. In these
-            ten years, we have been lucky to work with some of the biggest
-            brands in the world, from start-ups at incubation to global giants
-            and the top of the Fortune 500 list. You will find all the investor
-            information on Dotclu that you might need here. This includes share
-            prices, company policies, corporate governance, disclosures,
-            financials, investor services, and reports and filings.
+            ideaved is an MSME-registered Indian technology company founded approximately 2 years ago, based in Ghaziabad and Jaipur. We specialise in AI systems and software for defence and government — with delivered projects for the Indian Army and the Indian Air Force. We are an early-stage company with a focused client portfolio and a clear mission: building technology that works for India's armed forces and government institutions. Investor documentation, governance information, and financial disclosures are available on request.
           </p>{" "}
         </div>
       </div>

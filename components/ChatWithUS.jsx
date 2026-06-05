@@ -8,17 +8,18 @@ const ChatWithUS = () => {
   return (
     <div className="w-[100px] h-fit">
       <ReactWhatsapp
-        number="+91 9773715756"
-        message="I need Expert For My IT Problem"
-        className=" flex flex-row items-center justify-center p-2 bg-[#102C51] rounded-full shadow-md shadow-gray-700"
+        number="+91 8377827753"
+        message="Hello, I'd like to know more about ideaved's services."
+        className="flex flex-row items-center justify-center p-2 bg-green-500 hover:bg-green-600 rounded-full shadow-md shadow-gray-700 transition-all duration-200"
       >
         <Image
           width={200}
           height={200}
           src={svg}
-          className=" w-[20px] h-[20px] mx-auto"
+          className="w-[20px] h-[20px] mx-auto"
+          alt="WhatsApp"
         />
-        <p className=" text-[10px] pl-1 mix-blend-difference py-2 font-bold text-white">
+        <p className="text-[10px] pl-1 py-2 font-bold text-white">
           Live Chat
         </p>
       </ReactWhatsapp>

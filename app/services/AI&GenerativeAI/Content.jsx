@@ -71,7 +71,7 @@ const Content = () => {
           their datasets and generate synthetic data for training machine
           learning models. By generating additional data points, organizations
           can improve model performance, overcome data scarcity challenges, and
-          reduce reliance on manually labeled datasets. At Dotclu, we believe in
+          reduce reliance on manually labeled datasets. At Ideaved, we believe in
           the transformative power of AI and generative AI. Our dedicated team
           works closely with clients to understand their unique challenges and
           deliver tailored solutions that drive real business outcomes. By

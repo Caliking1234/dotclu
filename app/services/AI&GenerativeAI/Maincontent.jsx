@@ -9,23 +9,17 @@ const Maincontent = () => {
         <div className="w-full p-8 lg:px-24 sm:p-12 md:p-20" data-aos="fade-up">
          
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5">
-            AI and Generative AI Solutions
+            Enterprise AI & Machine Learning
           </h1>
 
           <p className="">
-            At Dotclu, we specialize in providing cutting-edge IT services in
-            the field of Artificial Intelligence (AI) and Generative AI. Our
-            expert team of AI engineers and data scientists are dedicated to
-            helping businesses harness the power of AI to drive innovation,
-            automate processes, and unlock new opportunities. With our
-            comprehensive range of AI solutions, we empower organizations to
-            stay ahead in today's fast-paced digital landscape.
+            ideaved delivers AI and generative AI solutions built for real operational use — not just demos. From machine learning and computer vision to NLP and generative AI, we design and deploy systems that solve specific problems for our clients in defence, government, and enterprise. Based in India (Ghaziabad & Jaipur), we are an MSME with hands-on AI delivery experience across Indian government projects.
           </p>
 
 
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-3xl font-bold py-16" data-aos="fade-up">
-              AI Solutions:
+              Intelligent Automation & Predictive Analytics:
             </h1>
 
             <div className=" py-5 md:px-16 w-full flex flex-col md:flex-row-reverse gap-8">
@@ -206,7 +200,7 @@ const Maincontent = () => {
           </div>
 
           <p className="py-5" data-aos="fade-up">
-            At Dotclu, we believe in the transformative power of AI and
+            At Ideaved, we believe in the transformative power of AI and
             generative AI. Our dedicated team works closely with clients to
             understand their unique challenges and deliver tailored solutions
             that drive real business outcomes. By harnessing the potential of

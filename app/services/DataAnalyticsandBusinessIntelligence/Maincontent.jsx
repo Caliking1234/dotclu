@@ -12,7 +12,7 @@ const Maincontent = () => {
           </h1>
 
           <p className="">
-            At Dotclu, we offer comprehensive IT services specializing in data
+            At Ideaved, we offer comprehensive IT services specializing in data
             analytics and business intelligence. Our expert team of data
             scientists, analysts, and engineers is dedicated to helping
             businesses leverage the power of data to gain valuable insights and

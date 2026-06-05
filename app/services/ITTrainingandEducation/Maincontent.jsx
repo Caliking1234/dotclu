@@ -26,7 +26,7 @@ const Maincontent = () => {
           </h1>
 
           <p className="">
-            At Dotclu, we offer comprehensive IT training and education services
+            At Ideaved, we offer comprehensive IT training and education services
             to empower individuals and organizations with the knowledge and
             skills required to excel in today's technology-driven world. Our
             experienced instructors and industry experts deliver engaging and
@@ -216,7 +216,7 @@ const Maincontent = () => {
           </div>
 
           <p className="" data-aos="fade-up">
-            At Dotclu, we are committed to delivering high-quality IT training
+            At Ideaved, we are committed to delivering high-quality IT training
             and education solutions that empower individuals and organizations
             to thrive in the digital age. Our experienced instructors, flexible
             training formats, and customized programs ensure that you receive

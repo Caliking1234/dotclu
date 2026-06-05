@@ -24,7 +24,7 @@ const page = () => {
         <div className=" absolute top-[50%] translate-y-[-50%] text-white px-10 md:px-16">
           <h1 className="text-3xl sm:text-5xl font-bold">
             Start your Career with <br />
-            Dotclu
+            Ideaved
           </h1>
         </div>
       </div>

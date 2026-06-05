@@ -21,24 +21,18 @@ const Maincontent = () => {
       <div>
         <div className="w-full p-8 lg:px-24 sm:p-12 md:p-20 " data-aos="fade-up">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5" >
-            Cloud Computing Solutions
+            Enterprise Cloud Infrastructure
           </h1>
 
           <p className="" data-aos="fade-up">
-            At Dotclu, we specialize in providing comprehensive IT services in
-            the realm of Cloud Computing. Our expert team of cloud architects
-            and engineers is dedicated to helping businesses leverage the power
-            of cloud technology to transform their operations, enhance
-            scalability, and drive innovation. With our robust suite of cloud
-            computing solutions, we empower organizations to stay ahead in
-            today's fast-paced digital landscape.
+            ideaved sets up and manages secure cloud infrastructure for government and defence clients — including private cloud, hybrid, and air-gap compatible environments for sensitive use cases. Based in India (Ghaziabad & Jaipur), we design cloud solutions that meet the security and data residency requirements of Indian government and armed forces deployments.
           </p>
 
          
 
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-3xl font-bold py-16" data-aos="fade-up">
-              Cloud Infrastructure Solutions:
+              Secure Multi-Cloud Architecture:
             </h1>
 
             <div className=" py-5 md:px-16 w-full  flex flex-col md:flex-row gap-8">

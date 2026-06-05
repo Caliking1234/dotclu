@@ -13,7 +13,7 @@ const page = () => {
     setTitle(" Terms and Conditions");
 
     setContent(
-      "At Dotclu, we are committed to protecting the privacy and security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and store your data when you interact with our website, products, and services. We encourage you to read this policy carefully to understand our practices regarding your personal information."
+      "At Ideaved, we are committed to protecting the privacy and security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and store your data when you interact with our website, products, and services. We encourage you to read this policy carefully to understand our practices regarding your personal information."
     );
   }, []);
   return (
@@ -43,7 +43,7 @@ const page = () => {
             All content, materials, and intellectual property available on our
             website and within our services, including but not limited to text,
             graphics, logos, images, software, and audio/video clips, are owned
-            by Dotclu or its licensors. You may not use, reproduce, distribute,
+            by Ideaved or its licensors. You may not use, reproduce, distribute,
             or modify any content without our prior written consent.
           </p>
         </div>
@@ -116,7 +116,7 @@ const page = () => {
         <div data-aos="fade-up">
           <h1 className=" font-semibold text-xl">7. Indemnification</h1>
           <p className=" sm:text-lg pl-8 py-3">
-            You agree to indemnify, defend, and hold harmless Dotclu and its affiliates, officers, directors, employees, and agents
+            You agree to indemnify, defend, and hold harmless Ideaved and its affiliates, officers, directors, employees, and agents
             from and against any claims, liabilities, damages, losses, costs, or
             expenses arising out of your use of our services or violation of
             these Terms.
@@ -146,7 +146,7 @@ const page = () => {
             These Terms shall be governed by and construed in accordance with
             the laws of India. Any disputes arising out of or relating to these
             Terms shall be exclusively subject to the jurisdiction of the courts
-            in Dotclu's jurisdiction.
+            in Ideaved's jurisdiction.
           </p>
         </div>
       </div>
@@ -155,7 +155,7 @@ const page = () => {
           <h1 className=" font-semibold text-xl">10. Contact Us:</h1>
           <p className=" sm:text-lg pl-8 py-3">
             If you have any questions, concerns, or feedback regarding these
-            Terms, please contact us at <span className=" text-blue-500 border-b-[1px] border-transparent hover:border-blue-500 transition-all duration-100 ease-in cursor-pointer">info@dotclu.com</span>
+            Terms, please contact us at <span className=" text-blue-500 border-b-[1px] border-transparent hover:border-blue-500 transition-all duration-100 ease-in cursor-pointer">info.ideaved@gmail.com</span>
           </p>
         </div>
       </div>

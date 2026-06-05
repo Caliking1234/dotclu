@@ -8,13 +8,13 @@ import { useState, useEffect } from "react";
 import Piclongcard from "./Piclongcard";
 import Maincontent from "./Maincontent";
 
-const DotVision = () => {
+const HAWKFlightOps = () => {
   return (
     <div className="">
       <div className="relative">
         <Image
           src={Slide1}
-          alt="badag"
+          alt="HAWK-Flight Operations"
           width={800}
           height={800}
           className=" w-full h-[40vh] lg:h-[60vh]  mt-20"
@@ -24,7 +24,7 @@ const DotVision = () => {
             className=" backdrop-brightness-50 p-8 text-3xl sm:text-5xl lg:text-6xl font-bold"
             data-aos="fade-up"
           >
-            DotVision
+            HAWK-Flight Operations
           </h1>
         </div>
       </div>
@@ -38,4 +38,4 @@ const DotVision = () => {
   );
 };
 
-export default DotVision;
+export default HAWKFlightOps;

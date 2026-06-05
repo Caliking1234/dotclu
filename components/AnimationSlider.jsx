@@ -130,7 +130,7 @@ const AnimationSlider = () => {
           </div>
           <div className=" text w-full text-center absolute top-[50%] translate-y-[-50%] z-20">
             <h1 className=" text-xl sm:text-4xl my-5 md:text-6xl font-extrabold">
-              Dotclu recognised as Leader in
+              Ideaved recognised as Leader in
             </h1>
             <h1 className=" text-lg sm:text-3xl my-5  font-extrabold">
               the Zinnov Zones ER&D report,2022
@@ -145,7 +145,7 @@ const AnimationSlider = () => {
               Webby 2023 Honoree
             </h1>
             <p className=" text-xs md:text-sm">
-              Globally recognised for Apps,dApps and Data Management
+              India-based AI & defence technology company — Ghaziabad & Jaipur
             </p>
             <p className=" text-xs md:text-sm">Oscar Of Internet</p>
           </div>

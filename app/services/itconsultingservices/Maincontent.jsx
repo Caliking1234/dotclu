@@ -24,7 +24,7 @@ const Maincontent = () => {
           </h1>
 
           <p className="">
-            At Dotclu, we offer comprehensive IT consulting services to help
+            At Ideaved, we offer comprehensive IT consulting services to help
             businesses navigate the ever-changing technological landscape and
             achieve their strategic objectives. Our experienced team of IT
             consultants possesses deep industry knowledge and technical
@@ -241,7 +241,7 @@ const Maincontent = () => {
           </div>
 
           <p className="" data-aos="fade-up">
-            At Dotclu, we are committed to delivering strategic IT consulting
+            At Ideaved, we are committed to delivering strategic IT consulting
             services that drive innovation, enhance efficiency, and enable
             business growth. Our consultants partner with you to understand your
             unique needs and craft tailored solutions that align with your

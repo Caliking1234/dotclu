@@ -26,7 +26,7 @@ const sectionexra = () => {
                 <br />
               </h1>
               <p className=" text-xs sm:text-base">
-                At Dotclu, we foster a culture of innovation and collaboration.
+                At Ideaved, we foster a culture of innovation and collaboration.
                 We believe that great ideas come from diverse perspectives and
                 teamwork. You'll have the opportunity to work with a talented
                 and passionate team, exchanging ideas, and collaborating on

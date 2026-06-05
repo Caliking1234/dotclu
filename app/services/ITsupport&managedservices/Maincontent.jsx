@@ -21,17 +21,11 @@ const Maincontent = () => {
       <div>
         <div className="w-full p-8 lg:px-24 sm:p-12 md:p-20" data-aos="fade-up"> 
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5">
-            IT Support and Managed Services
+            IT Support & Managed Services
           </h1>
 
           <p className="">
-            At Dotclu, we provide comprehensive IT support and managed services
-            to ensure the smooth and efficient operation of your IT
-            infrastructure. Our expert team of IT professionals is dedicated to
-            resolving technical issues, optimizing system performance, and
-            proactively managing your IT environment. With our tailored support
-            solutions, you can focus on your core business while we take care of
-            your IT needs.
+            ideaved provides IT support and managed services for deployed systems — keeping them running, monitored, and maintained after go-live. For our Indian Army and IAF clients, we provide dedicated support tailored to the operational requirements of each deployment. Based in Ghaziabad and Jaipur, our support team is responsive and focused on the few clients we serve rather than stretched across hundreds.
           </p>
 
           <div>
@@ -200,7 +194,7 @@ const Maincontent = () => {
           </div>
 
           <p className="" data-aos="fade-up">
-            At Dotclu, we understand the critical role that IT plays in your
+            At Ideaved, we understand the critical role that IT plays in your
             business success. Our IT support and managed services provide the
             expertise, reliability, and peace of mind you need to focus on your
             core business while leaving your IT operations in capable hands.

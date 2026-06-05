@@ -24,22 +24,16 @@ const Maincontent = () => {
           Insurance industry:
         </p> */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5" >
-            Software Development Solutions
+            Enterprise Software Development
           </h1>
 
           <p className="">
-            At Dotclu, we offer comprehensive IT services in the realm of
-            software development. Our expert team of software engineers and
-            developers is dedicated to delivering high-quality, innovative, and
-            scalable software solutions that drive business growth and success.
-            With our proven expertise and cutting-edge technologies, we help
-            businesses across industries transform their ideas into robust
-            software applications.
+            ideaved builds custom software for defence and government clients — from requirement to deployment. As an MSME based in Ghaziabad and Jaipur, we have delivered production systems for the Indian Army and Indian Air Force. We write secure, maintainable code and work closely with clients throughout the project lifecycle to ensure the software actually fits the operational environment it is deployed in.
           </p>
 
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-3xl font-bold py-16" data-aos="fade-up">
-              Custom Software Development:
+              Enterprise Application Development:
             </h1>
 
             <div className=" py-5 md:px-16 w-full ">
@@ -282,7 +276,7 @@ const Maincontent = () => {
           </div>
 
           <p className="py-5" data-aos="fade-up">
-            At Dotclu, we are committed to delivering software solutions that
+            At Ideaved, we are committed to delivering software solutions that
             empower businesses, drive innovation, and fuel growth. With our
             extensive expertise in software development, we transform your ideas
             into robust applications that revolutionize your business processes

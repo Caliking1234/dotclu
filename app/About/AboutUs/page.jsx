@@ -14,7 +14,7 @@ const AboutUs = () => {
     setTitle("About Us");
 
     setContent(
-      "At Dotclu, we are a dynamic and innovative IT company dedicated to providing cutting-edge technology solutions to businesses of all sizes. With a team of experienced professionals and a passion for driving digital transformation, we strive to empower our clients to leverage technology effectively, optimize their operations, and achieve their business objectives."
+      "ideaved is an MSME-registered Indian technology company headquartered in Ghaziabad with a team in Jaipur. Founded 2 years ago, we specialise in AI systems and software for defence and government clients. Our delivered projects include three AI solutions for the Indian Army — AI Personalized Training for Agniveer, AI Risk Assessment, and a Vehicle Tracking & Monitoring System — and our HAWK-Flight Operations platform, which is live with the Indian Air Force trainee programme. We are a small, focused team that works closely with our clients to build systems that actually work in the field."
     );
   }, []);
   return (
@@ -35,26 +35,26 @@ const AboutUs = () => {
       </div>
       <WrittenContent title={title} content={content} />
       
-      <Longcard 
-        a={"114M USD"}
-        b={"Annual Revenue"}
-        c={"1000+"}
-        d={"Clients served sill date"}
-        e={"1800+"}
-        f={"Employee"}
+      <Longcard
+        a={"4"}
+        b={"Projects delivered — Indian Army (3) & Indian Air Force (1)"}
+        c={"MSME"}
+        d={"Registered Indian company, Ghaziabad & Jaipur"}
+        e={"2 Yrs"}
+        f={"Of focused AI and defence technology delivery"}
       />
 
       <FlipCards />
       <div className=" w-full bg-gradient-to-r from-cyan-700 to-blue-700 flex justify-center items-center py-10">
         <div className="w-fit px-4">
           <h1 className=" text-5xl text-white font-bold">
-            Facing a challenge?
+            Explore a Defence Technology Partnership
           </h1>
           <p className="text-white font-thin py-3">
-            We will make sure you stay ahead of the curve.
+            ideaved is open to international co-development, licensing, and technology transfer engagements with allied defence organisations and government agencies.
           </p>
-          <button className=" my-5 text-white bg-transparent border border-white  px-5 py-2 rounded-md">
-            Let's Talk
+          <button className=" my-5 text-white bg-white bg-opacity-20 border border-white hover:bg-white hover:text-blue-700 transition-all duration-300 px-8 py-3 rounded-md font-semibold">
+            Get in Touch
           </button>
         </div>
       </div>

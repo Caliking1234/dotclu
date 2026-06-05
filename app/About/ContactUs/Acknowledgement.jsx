@@ -9,59 +9,43 @@ const Acknowledgement = () => {
          
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-          <h1 className=" text-4xl lg:text-6xl font-bold leading-8 text-gray-700" data-aos="fade-up">
-            Brands we've helped to grow :
+          <h1 className="text-4xl lg:text-6xl font-bold leading-8 text-gray-700" data-aos="fade-up">
+            Our Clients
           </h1>
-          <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-12 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4" data-aos="fade-up">
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://d1ugv6dopk5bx0.cloudfront.net/s3fs-public/2023-04/Group%205613.webp"
-              alt="Transistor"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://d1ugv6dopk5bx0.cloudfront.net/s3fs-public/2023-04/adani-logo-2012%201.webp"
-              alt="Reform"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://d1ugv6dopk5bx0.cloudfront.net/s3fs-public/2023-04/Abbott%20svg%20%282%29.webp"
-              alt="Transistor"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://d1ugv6dopk5bx0.cloudfront.net/s3fs-public/2023-04/Layer_1.webp"
-              alt="Reform"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://d1ugv6dopk5bx0.cloudfront.net/s3fs-public/2023-04/brand-zoetis.webp"
-              alt="Tuple"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://d1ugv6dopk5bx0.cloudfront.net/s3fs-public/2023-04/United_Rentals_Logo_1.webp"
-              alt="SavvyCal"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src="https://d1ugv6dopk5bx0.cloudfront.net/s3fs-public/2023-04/image%2064_0.webp"
-              alt="Statamic"
-              width={158}
-              height={48}
-            />
+          <p className="text-gray-500 mt-4 text-lg" data-aos="fade-up">Proud to serve India's defence and government organisations.</p>
+          <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 gap-6" data-aos="fade-up">
+            <div className="flex flex-col items-center justify-center border-2 border-slate-800 rounded-xl p-6 text-center bg-slate-50">
+              <div className="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center mb-3">
+                <span className="text-white text-xl font-bold">IA</span>
+              </div>
+              <p className="font-bold text-slate-800 text-base">Indian Army</p>
+              <p className="text-xs text-slate-500 mt-1">Ministry of Defence, GoI</p>
+              <span className="mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">Government</span>
+            </div>
+            <div className="flex flex-col items-center justify-center border-2 border-sky-700 rounded-xl p-6 text-center bg-sky-50">
+              <div className="w-12 h-12 bg-sky-700 rounded-full flex items-center justify-center mb-3">
+                <span className="text-white text-xl font-bold">IAF</span>
+              </div>
+              <p className="font-bold text-sky-800 text-base">Indian Air Force</p>
+              <p className="text-xs text-slate-500 mt-1">Ministry of Defence, GoI</p>
+              <span className="mt-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">Government</span>
+            </div>
+            <div className="flex flex-col items-center justify-center border-2 border-red-200 rounded-xl p-6 text-center bg-red-50">
+              <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mb-3">
+                <span className="text-white text-sm font-bold">ABT</span>
+              </div>
+              <p className="font-bold text-gray-800 text-base">Abbott India</p>
+              <p className="text-xs text-slate-500 mt-1">Healthcare & Pharmaceuticals</p>
+              <span className="mt-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium">Private</span>
+            </div>
+            <div className="flex flex-col items-center justify-center border-2 border-cyan-200 rounded-xl p-6 text-center bg-cyan-50">
+              <div className="w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center mb-3">
+                <span className="text-white text-sm font-bold">6E</span>
+              </div>
+              <p className="font-bold text-gray-800 text-base">IndiGo Airlines</p>
+              <p className="text-xs text-slate-500 mt-1">Aviation & Travel</p>
+              <span className="mt-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium">Private</span>
+            </div>
           </div>
         </div>
       </div>

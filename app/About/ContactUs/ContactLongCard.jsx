@@ -17,7 +17,7 @@ export default function Longcard() {
               Looking for Career Opportunities?
             </p>
             <span className=" text-sm sm:text-lg">
-              Email your Resume to career@Dotclu.com
+              Email your Resume to info.ideaved@gmail.com
             </span>{" "}
           </div>
         </div>

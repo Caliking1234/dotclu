@@ -108,9 +108,7 @@ const Navbar = ({ List1 }) => {
   return (
     <header
       id="nav"
-      className={`z-50 h-[80px] w-screen flex items-center justify-center md:gap-0 lg:gap-5 fixed top-0 left-0 text-white transition-all duration-300 ${
-        scrolling ? "bg-black" : "bg-transparent"
-      }`}
+      className={`z-50 h-[80px] w-screen flex items-center justify-center md:gap-0 lg:gap-5 fixed top-0 left-0 text-white transition-all duration-300 ${scrolling ? "bg-black" : "bg-black bg-opacity-70"}`}
     >
       <div
         ref={fromRef}
@@ -259,15 +257,15 @@ const Navbar = ({ List1 }) => {
             return (
               <li
                 key={index}
-                className=" my-3 py-3 min-w-[100px] hover:text-blue-300 transition-all duration-300 cursor-pointer text-center"
+                className="my-3 py-3 min-w-[100px] hover:text-blue-300 transition-all duration-300 cursor-pointer text-center text-white font-semibold"
               >
                 <DropDown title={item.title} list1={item.module} />
               </li>
             );
           })}
         </ul>
-        <div className="hidden md:block w-[100px] px-2 py-3 border-white border-[1px] text-xs  cursor-pointer">
-          <button onClick={handleForm} className="w-full">
+        <div className="hidden md:block w-[100px] px-2 py-3 border-white border-[1px] text-xs cursor-pointer bg-blue-600 hover:bg-blue-700 transition-all duration-200 rounded">
+          <button onClick={handleForm} className="w-full text-white font-semibold">
             Contact Us
           </button>
         </div>

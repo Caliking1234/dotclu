@@ -30,16 +30,13 @@ const page = () => {
         <br />
         <div className="text-left lg:px-24 lg:text-justify">
           <p className=" text-xl md:text-2xl lg:text-2xl">
-            If you collaborate with Dotclu then you are working with a team who
+            If you collaborate with Ideaved then you are working with a team who
             strive to provide solutions that help you do business faster,
             better, and smarter than ever before.
           </p>{" "}
           <br />
           <p className=" text-xl md:text-2xl lg:text-2xl ">
-            Our focus on performance and our desire to disrupt comes from those
-            who started the company from scratch. Those who built it up led it
-            to an IPO and continue to empower 1,800+ employees to always improve
-            on yesterday in order to power infinite possibilities.{" "}
+            Our drive comes from those who started ideaved from scratch with a clear purpose — building AI and software that serves India's defence and government. In 2 years we have delivered 4 projects for the Indian Army and Indian Air Force, growing steadily from our offices in Ghaziabad and Jaipur.
           </p>
         </div>
       </div>

@@ -27,9 +27,9 @@ const pages = () => {
         <div className="text-left lg:px-24 lg:text-justify"> 
 
         <p className=" text-xl md:text-2xl lg:text-2xl">
-        We collaborate, consult, and integrate with companies worldwide. Together, we craft unique, cutting-edge, and business-changing IT solutions. Our expertise helps companies do business faster, better, and smarter. We are lucky to do this for leaders across various industry verticals. We provide services to the retail, travel, e-commerce, education, and hospitality sectors and make technology work across manufacturing, consumer goods, logistics, and supply chain management. We integrate solutions that drive sales across lifestyle, non-profits and banking, financial services, and insurance (BFSI).
+        ideaved is an MSME-registered Indian AI company focused on defence and government clients. In 2 years we have delivered AI systems for the Indian Army and our HAWK platform for the Indian Air Force. We work closely with a small number of clients and take pride in building systems that actually perform in operational environments.
         </p> <br/>
-        <p className=" text-xl md:text-2xl lg:text-2xl ">We have developed a great reputation for helping companies because we never let ourselves forget that we’re fortunate to have our clients and not the other way around. From start-ups at incubation to global giants at the top of the Fortune 500 list, we have been lucky to work with some of the leading brands in the world. In return, they have been kind enough to share their experiences working with us.</p>
+        <p className=" text-xl md:text-2xl lg:text-2xl ">Our clients include the Indian Army (3 AI projects: Agniveer personalized training, AI risk assessment, and vehicle tracking & monitoring) and the Indian Air Force (HAWK flight operations for the trainee programme). We value these relationships and are focused on expanding our government and defence client base.</p>
       </div>
         </div>
       <Testimonialpg  data-aos="fade-up"/>
