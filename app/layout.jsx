@@ -158,7 +158,7 @@ const RootLayout = ({ children }) => {
           <meta property="og:site_name" content="Ideaved Technologies" />
           <meta property="og:title" content="Ideaved Technologies — Intelligent Systems for Complex Environments" />
           <meta property="og:description" content="AI products and mission-critical software for defence, government, healthcare, and industry. Engineered to perform under real-world operational pressure." />
-          <meta property="og:image" content="https://www.ideaved.com/api/og" />
+          <meta property="og:image" content="https://www.ideaved.com/Images/hawk-banner.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
           <meta property="og:image:alt" content="Ideaved Technologies — AI for Defence, Government & Enterprise" />
@@ -168,7 +168,7 @@ const RootLayout = ({ children }) => {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Ideaved Technologies — Intelligent Systems for Complex Environments" />
           <meta name="twitter:description" content="AI products and mission-critical software for defence, government, healthcare, and industry. Engineered to perform under real-world operational pressure." />
-          <meta name="twitter:image" content="https://www.ideaved.com/api/og" />
+          <meta name="twitter:image" content="https://www.ideaved.com/Images/hawk-banner.jpg" />
 
           <script
             type="application/ld+json"
