@@ -13,8 +13,8 @@ function Footer({ List1 }) {
             <Link href="/">
               <Image src={logo} height={100} width={160} className="w-[140px]" alt="Ideaved" />
             </Link>
-            <p className="text-slate-400 text-sm leading-6 max-w-xs">
-              India-based AI and defence technology company. Headquartered in Ghaziabad, development team in Jaipur. Delivering mission-critical systems for the Indian Army and Indian Air Force.
+            <p className="text-slate-400 text-sm leading-7 max-w-xs">
+              India-based AI and software engineering company. Delivering mission-critical systems for defence, government, healthcare, and enterprise. MSME-registered.
             </p>
             <div className="flex flex-col gap-1 text-sm">
               <a href="mailto:info.ideaved@gmail.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">

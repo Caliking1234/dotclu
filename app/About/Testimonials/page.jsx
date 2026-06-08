@@ -27,9 +27,9 @@ const pages = () => {
         <div className="text-left lg:px-24 lg:text-justify"> 
 
         <p className=" text-xl md:text-2xl lg:text-2xl">
-        ideaved is an MSME-registered Indian AI company focused on defence and government clients. In 2 years we have delivered AI systems for the Indian Army and our HAWK platform for the Indian Air Force. We work closely with a small number of clients and take pride in building systems that actually perform in operational environments.
+        Ideaved Technologies is an MSME-registered Indian AI company specialising in defence, government, healthcare, and enterprise. In 2 years we have delivered AI systems for defence agencies, government organisations, and enterprise clients. We work closely with a small number of clients and take pride in building systems that perform in operational environments.
         </p> <br/>
-        <p className=" text-xl md:text-2xl lg:text-2xl ">Our clients include the Indian Army (3 AI projects: Agniveer personalized training, AI risk assessment, and vehicle tracking & monitoring) and the Indian Air Force (HAWK flight operations for the trainee programme). We value these relationships and are focused on expanding our government and defence client base.</p>
+        <p className=" text-xl md:text-2xl lg:text-2xl ">Our portfolio spans AI training platforms, operational risk assessment, asset tracking, aviation flight operations, clinical AI, manufacturing intelligence, and enterprise analytics. We value long-term partnerships and are focused on expanding our presence across defence, government, and industry.</p>
       </div>
         </div>
       <Testimonialpg  data-aos="fade-up"/>

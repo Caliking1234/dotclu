@@ -36,7 +36,7 @@ const page = () => {
           </p>{" "}
           <br />
           <p className=" text-xl md:text-2xl lg:text-2xl ">
-            Our drive comes from those who started ideaved from scratch with a clear purpose — building AI and software that serves India's defence and government. In 2 years we have delivered 4 projects for the Indian Army and Indian Air Force, growing steadily from our offices in Ghaziabad and Jaipur.
+            Our drive comes from those who started Ideaved from scratch with a clear purpose — building AI and software that genuinely serves defence, government, and enterprise. In 2 years we have delivered 8 projects across multiple industries, growing steadily from our offices in Ghaziabad and Jaipur.
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Maincontent = () => {
           </h1>
 
           <p className="">
-            ideaved provides IT support and managed services for deployed systems — keeping them running, monitored, and maintained after go-live. For our Indian Army and IAF clients, we provide dedicated support tailored to the operational requirements of each deployment. Based in Ghaziabad and Jaipur, our support team is responsive and focused on the few clients we serve rather than stretched across hundreds.
+            Ideaved provides IT support and managed services for deployed systems — keeping them running, monitored, and maintained after go-live. For our defence and government clients, we provide dedicated support tailored to the operational requirements of each deployment. Based in Ghaziabad and Jaipur, our support team is responsive and focused on the few clients we serve rather than stretched across hundreds.
           </p>
 
           <div>

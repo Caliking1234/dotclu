@@ -8,7 +8,7 @@ const Maincontent = () => {
         <div className="w-full p-8 lg:px-24 sm:p-12 md:p-20" data-aos="fade-up">
 
           <div className="inline-block bg-cyan-50 border border-cyan-200 text-cyan-700 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
-            Deployed with Indian Air Force
+            Defence Aviation · AI Platform
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5">
@@ -16,13 +16,13 @@ const Maincontent = () => {
           </h1>
 
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            Developed by ideaved, HAWK-Flight Operations is a next-generation AI-powered flight operations management platform purpose-built for military aviation training environments. Successfully deployed for the Indian Air Force (IAF) trainee programme, HAWK streamlines sortie scheduling, trainee rostering, simulator slot management, and aircraft readiness tracking — all within a secure, unified command interface. By embedding advanced AI algorithms into every layer of the operations workflow, HAWK has measurably improved training throughput, reduced scheduling conflicts, and enabled instructors to focus on what matters most: developing the next generation of IAF aviators.
+            Developed by Ideaved, HAWK-Flight Operations is a next-generation AI-powered flight operations management platform purpose-built for military aviation training environments. Deployed with a defence aviation client, HAWK streamlines sortie scheduling, trainee rostering, simulator slot management, and aircraft readiness tracking — all within a secure, unified command interface. By embedding advanced AI algorithms into every layer of the operations workflow, HAWK has measurably improved training throughput, reduced scheduling conflicts, and enabled instructors to focus on what matters most: developing the next generation of military aviators.
           </p>
 
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 py-6 border-y border-gray-200" data-aos="fade-up">
             <div className="text-center">
-              <p className="text-4xl font-bold text-cyan-600">IAF</p>
-              <p className="text-sm text-slate-500 mt-1">Indian Air Force<br/>Trainee Programme</p>
+              <p className="text-4xl font-bold text-cyan-600">Live</p>
+              <p className="text-sm text-slate-500 mt-1">Defence Aviation<br/>Training Programme</p>
             </div>
             <div className="text-center">
               <p className="text-4xl font-bold text-cyan-600">AI-Powered</p>
@@ -100,14 +100,14 @@ const Maincontent = () => {
 
           <div className="py-16">
             <h1 className="text-3xl sm:text-4xl md:text-3xl font-bold py-8" data-aos="fade-up">
-              Operational Impact at IAF:
+              Operational Impact:
             </h1>
 
             <div className="py-5 md:px-16 w-full flex flex-col md:flex-row-reverse gap-8">
               <div className="w-full md:w-[40%] h-full my-auto">
                 <Image
                   src="/Images/hawk-ops.jpg"
-                  alt="IAF HAWK Flight Operations"
+                  alt="HAWK Flight Operations"
                   width={600}
                   height={560}
                   className="aspect-[14/13] w-full object-cover rounded-2xl"
@@ -147,7 +147,7 @@ const Maincontent = () => {
 
           <div className="py-8 bg-gradient-to-r from-slate-900 to-cyan-900 rounded-xl p-8 my-12 text-white" data-aos="fade-up">
             <p className="text-lg font-semibold">
-              HAWK-Flight Operations is ideaved's flagship defence aviation product — proven in an active Indian Air Force trainee programme and ready for international military aviation partnerships.
+              HAWK-Flight Operations is Ideaved's flagship defence aviation product — proven in an active military aviation training programme and ready for international defence aviation partnerships.
             </p>
             <p className="text-sm text-gray-300 mt-3">
               Available for licensing to allied air forces and military aviation academies. Fully customizable to local fleet types, regulations, and training syllabi.

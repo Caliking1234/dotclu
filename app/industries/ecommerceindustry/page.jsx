@@ -2,7 +2,7 @@
 import React from "react";
 import Slide1 from "../../../public/Images/e-comm.jpg";
 import Image from "next/image";
-import Longcard from "@components/Longcard";
+
 import { useEffect, useState } from "react";
 import Industriescontent from "./Industriescontent";
 
@@ -25,14 +25,6 @@ const page = () => {
         </div>
       </div>
       <Industriescontent/>
-      <Longcard
-        a={"15+"}
-        b={"Years of Experience"}
-        c={"100+"}
-        d={"Global Clients"}
-        e={"1200+"}
-        f={"Expert Developers"}
-      />
     </div>
   );
 };

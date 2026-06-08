@@ -28,7 +28,7 @@ const Maincontent = () => {
           </h1>
 
           <p className="">
-            ideaved builds custom software for defence and government clients — from requirement to deployment. As an MSME based in Ghaziabad and Jaipur, we have delivered production systems for the Indian Army and Indian Air Force. We write secure, maintainable code and work closely with clients throughout the project lifecycle to ensure the software actually fits the operational environment it is deployed in.
+            Ideaved builds custom software for defence, government, and enterprise clients — from requirement to deployment. As an MSME based in Ghaziabad and Jaipur, we have delivered production systems for defence agencies and government organisations. We write secure, maintainable code and work closely with clients throughout the project lifecycle to ensure the software fits the operational environment it is deployed in.
           </p>
 
           <div>

@@ -10,68 +10,90 @@ import img4 from "../public/Images/cse.webp";
 import img5 from "../public/Images/its.jpg";
 import img9 from "../public/Images/ai.png";
 import heroBg from "../public/Images/ai3.webp";
-
 import Image from "next/image";
-import ScrollImages from "@components/ImageModal";
 import ScrollSlider from "@components/ImageModal";
+import Link from "next/link";
 
 const home = () => {
   const Prod = [
     {
-      serviceName: "HAWK-Flight Operations",
-      serviceContent:
-        "Advanced flight operations management system for military aviation training — aircraft scheduling, trainee rostering, simulator allocation, and real-time ops dashboard. Deployed with the Indian Air Force.",
+      serviceName: "HAWK – Flight Operations",
+      serviceContent: "AI-powered flight operations platform for military aviation training — sortie scheduling, trainee rostering, simulator allocation, and real-time ops command dashboard.",
       serviceImg: "/Images/hawk-banner.jpg",
       serviceLink: "/Product/DotVision",
     },
     {
-      serviceName: "Dot-AI/VI",
-      serviceContent:
-        "AI-powered visual intelligence and augmented reality platform for immersive training simulations, field reconnaissance, and real-time data overlay in operational environments.",
+      serviceName: "AgniAI – AI Training Platform",
+      serviceContent: "Personalised AI training management for armed forces recruit programmes — adapting every recruit's curriculum in real time based on performance, skills gaps, and stage progression.",
+      serviceImg: "/Images/hawk-ops.jpg",
+      serviceLink: "/Product/AgniAI",
+    },
+    {
+      serviceName: "RiskSense – Risk Assessment",
+      serviceContent: "Predictive AI risk assessment for military operations — fusing terrain data, weather, and field intelligence into live mission risk scores and planning recommendations for commanders.",
+      serviceImg: "/Images/government.png",
+      serviceLink: "/Product/RiskSense",
+    },
+    {
+      serviceName: "Dot-AI/VI – Visual Intelligence",
+      serviceContent: "AI-powered visual intelligence and augmented reality platform for immersive training simulations, field reconnaissance, and real-time data overlay in operational environments.",
       serviceImg: "/Images/arvr9.jpg",
       serviceLink: "/Product/Dotarvr",
     },
+    {
+      serviceName: "IdeaLytics – Analytics Platform",
+      serviceContent: "Enterprise analytics and business intelligence for government, defence, healthcare, and manufacturing — turning raw operational data into real-time dashboards, forecasts, and decisions.",
+      serviceImg: "/Images/dataa.jpg",
+      serviceLink: "/Product/IdeaLytics",
+    },
+    {
+      serviceName: "MediSense – Clinical AI",
+      serviceContent: "AI-driven clinical decision support, patient risk stratification, and hospital operations intelligence for healthcare networks. ABDM-compliant, on-premise deployable.",
+      serviceImg: "/Images/healthcare.jpg",
+      serviceLink: "/Product/MediSense",
+    },
+    {
+      serviceName: "FactoryIQ – Manufacturing Intelligence",
+      serviceContent: "Predictive maintenance, visual quality inspection, and production optimisation for manufacturing facilities — edge-native, no cloud dependency, OPC-UA compatible.",
+      serviceImg: "/Images/ImgManufacture.jpg",
+      serviceLink: "/Product/FactoryIQ",
+    },
   ];
+
   const content = [
     {
       serviceName: "Defence AI Solutions",
-      serviceContent:
-        "AI systems built for defence and military use — delivered for the Indian Army (Agniveer training, risk assessment, vehicle tracking) and the Indian Air Force (HAWK flight ops). Security-first, field-proven, and ready for scale.",
+      serviceContent: "AI systems built for defence and military use. Security-first, field-proven, and built to operate in classified and air-gapped environments.",
       serviceImg: img1,
       serviceLink: "/services/defenceaisolutions",
     },
     {
       serviceName: "Custom Software Development",
-      serviceContent:
-        "End-to-end software development for government, defence, and enterprise clients — from requirement to deployment. Built for reliability, security, and long-term maintainability.",
+      serviceContent: "End-to-end software development for government, defence, and enterprise clients — from requirement to deployment. Built for reliability, security, and long-term maintainability.",
       serviceImg: img2,
       serviceLink: "/services/customsoftwaredevelopment",
     },
     {
       serviceName: "AI & Generative AI",
-      serviceContent:
-        "Machine learning, computer vision, NLP, and generative AI solutions tailored to real operational problems — not generic demos. We build AI that works in production.",
+      serviceContent: "Machine learning, computer vision, NLP, and generative AI tailored to real operational problems — not generic demos. We build AI that works in production environments.",
       serviceImg: img9,
       serviceLink: "/services/AI&GenerativeAI",
     },
     {
       serviceName: "Cybersecurity Services",
-      serviceContent:
-        "Threat detection, secure architecture design, and incident response for government and enterprise systems. Built with defence-grade security principles for our Indian clients.",
+      serviceContent: "Threat detection, secure architecture design, and incident response for government and enterprise systems. Built with defence-grade security principles.",
       serviceImg: img4,
       serviceLink: "/services/cybersecurityservices",
     },
     {
       serviceName: "Cloud Computing Solutions",
-      serviceContent:
-        "Scalable, secure cloud infrastructure setup and management — including private cloud, hybrid deployments, and air-gap compatible environments for sensitive use cases.",
+      serviceContent: "Scalable, secure cloud infrastructure — including private cloud, hybrid deployments, and air-gap compatible environments for sensitive use cases.",
       serviceImg: img3,
       serviceLink: "/services/cloudcomputingsolutions",
     },
     {
       serviceName: "IT Support & Managed Services",
-      serviceContent:
-        "Reliable IT support and managed services for organisations that need their systems to stay up. Proactive monitoring, fast incident response, and dedicated support for deployed projects.",
+      serviceContent: "Proactive monitoring, fast incident response, and dedicated support for deployed projects. We keep your systems running so you can focus on your mission.",
       serviceImg: img5,
       serviceLink: "/services/ITsupport&managedservices",
     },
@@ -79,129 +101,111 @@ const home = () => {
 
   return (
     <main className="w-full bg-slate-950 text-white">
-      <div className="w-full h-[90vh] overflow-hidden relative">
-        <Image
-          src={heroBg}
-          alt="Ideaved hero"
-          fill
-          priority
-          className="object-cover animate-ken-burns"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/30 flex flex-col justify-center items-start px-10 md:px-24">
-          <p className="text-xs sm:text-sm tracking-[0.3em] uppercase text-cyan-400 font-semibold mb-4" data-aos="fade-up">
-            Trusted by Indian Armed Forces
+
+      {/* ── Hero ── */}
+      <div className="w-full h-[100vh] overflow-hidden relative">
+        <Image src={heroBg} alt="Ideaved Technologies" fill priority className="object-cover animate-ken-burns" />
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/40 to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-24">
+          <p className="label-eyebrow mb-5" data-aos="fade-up">
+            Defence · Government · Healthcare · Industry
           </p>
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-4xl" data-aos="fade-up" data-aos-delay="100">
-            AI-Powered Defence &<br />Aviation Solutions
+          <h1
+            className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white max-w-3xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Intelligent Systems<br />for Complex<br />Environments.
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl" data-aos="fade-up" data-aos-delay="200">
-            Delivering mission-critical AI systems for the Indian Army and Indian Air Force — from battlefield intelligence to next-generation flight training operations.
+          <p
+            className="mt-7 text-base sm:text-lg text-slate-300 max-w-xl leading-[1.8] font-normal"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Ideaved Technologies engineers AI products and software for organisations where performance under pressure is non-negotiable — deployed across defence, government, healthcare, and industry.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="/services/defenceaisolutions" className="bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-8 py-3 rounded-md transition-all duration-300">
-              Explore Defence AI
-            </a>
-            <a href="/Product/DotVision" className="border border-white text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-3 rounded-md transition-all duration-300">
-              HAWK for IAF
-            </a>
-          </div>
-          <div className="mt-12 flex flex-wrap gap-10" data-aos="fade-up" data-aos-delay="400">
-            <div className="text-white">
-              <span className="text-3xl font-bold text-cyan-400">3</span>
-              <p className="text-sm text-gray-300 mt-1">Indian Army<br/>AI Projects</p>
-            </div>
-            <div className="text-white">
-              <span className="text-3xl font-bold text-cyan-400">1</span>
-              <p className="text-sm text-gray-300 mt-1">IAF Flight Ops<br/>Programme</p>
-            </div>
-            <div className="text-white">
-              <span className="text-3xl font-bold text-cyan-400">MSME</span>
-              <p className="text-sm text-gray-300 mt-1">Certified Indian<br/>Tech Company</p>
-            </div>
+          <div className="mt-9 flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="300">
+            <Link
+              href="/Product/DotVision"
+              className="bg-cyan-500 hover:bg-cyan-400 text-white text-sm font-semibold px-7 py-3 rounded-md tracking-wide transition-all duration-300"
+            >
+              Explore Products
+            </Link>
+            <Link
+              href="/About/ContactUs"
+              className="border border-white/40 text-white hover:border-white hover:bg-white/10 text-sm font-semibold px-7 py-3 rounded-md tracking-wide transition-all duration-300"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto pt-24 pb-10">
-        <p className="text-center text-sm tracking-[0.25em] uppercase text-cyan-400 font-semibold mb-4" data-aos="fade-up">
-          Deployed with Indian Armed Forces
-        </p>
-        <p
-          className="my-2 pb-4 text-center text-3xl md:text-4xl lg:text-7xl font-bold text-white"
-          data-aos="fade-up"
-        >
+      {/* ── Products ── */}
+      <div className="w-[90%] mx-auto pt-28 pb-10">
+        <p className="label-eyebrow text-center mb-5" data-aos="fade-up">Battle-tested platforms</p>
+        <h2 className="font-display text-center text-4xl md:text-5xl font-bold text-white mb-5" data-aos="fade-up">
           Our Products
+        </h2>
+        <p className="text-base sm:text-lg text-center text-slate-400 max-w-2xl mx-auto leading-[1.8]" data-aos="fade-up">
+          From defence AI to enterprise analytics — purpose-built platforms proven in real operational environments across India.
         </p>
-        <p className="text-lg sm:text-xl text-center text-slate-400 pb-4 max-w-3xl mx-auto" data-aos="fade-up">
-          Purpose-built defence and aviation platforms proven in real operational environments with the Indian Army and Indian Air Force.
-        </p>
+      </div>
+      <div className="py-8 px-8 mx-auto w-[95%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {Prod.map((service, index) => (
+          <MainContainer
+            key={index}
+            serviceName={service.serviceName}
+            serviceContent={service.serviceContent}
+            Img={service.serviceImg}
+            serviceLink={service.serviceLink}
+          />
+        ))}
       </div>
 
-      <div className="py-8 px-8 mx-auto w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5">
-        {Prod.map((service, index) => {
-          return (
-            <MainContainer
-              key={index}
-              serviceName={service.serviceName}
-              serviceContent={service.serviceContent}
-              Img={service.serviceImg}
-              serviceLink={service.serviceLink}
-            />
-          );
-        })}
-      </div>
+      {/* ── Scroll Slider ── */}
       <ScrollSlider />
-      <div className="w-[90%] mx-auto pt-24 pb-10">
-        <p className="text-center text-sm tracking-[0.25em] uppercase text-cyan-400 font-semibold mb-4" data-aos="fade-up">
-          Enterprise-Grade Capabilities
-        </p>
-        <p
-          className="my-2 pb-4 text-center text-3xl md:text-4xl lg:text-7xl font-bold text-white"
-          data-aos="fade-up"
-        >
+
+      {/* ── Services ── */}
+      <div className="w-[90%] mx-auto pt-28 pb-10">
+        <p className="label-eyebrow text-center mb-5" data-aos="fade-up">What we deliver</p>
+        <h2 className="font-display text-center text-4xl md:text-5xl font-bold text-white mb-5" data-aos="fade-up">
           Our Services
-        </p>
-        <p
-          className="text-lg sm:text-xl text-center text-slate-400 pb-4 max-w-3xl mx-auto"
-          data-aos="fade-up"
-        >
-          End-to-end technology services for defence, government, and enterprise — engineered for security, reliability, and operational scale.
+        </h2>
+        <p className="text-base sm:text-lg text-center text-slate-400 max-w-2xl mx-auto leading-[1.8]" data-aos="fade-up">
+          End-to-end technology services for defence, government, and enterprise — engineered for security, reliability, and scale.
         </p>
       </div>
-
-      <div className="py-8 px-8 w-[100%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
-        {content.map((service, index) => {
-          return (
-            <MainContainer
-              key={index}
-              serviceName={service.serviceName}
-              serviceContent={service.serviceContent}
-              Img={service.serviceImg}
-              serviceLink={service.serviceLink}
-            />
-          );
-        })}
+      <div className="py-8 px-8 w-[100%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        {content.map((service, index) => (
+          <MainContainer
+            key={index}
+            serviceName={service.serviceName}
+            serviceContent={service.serviceContent}
+            Img={service.serviceImg}
+            serviceLink={service.serviceLink}
+          />
+        ))}
       </div>
 
+      {/* ── Industries ── */}
       <Ourmission />
 
-      {/* Clients strip */}
-      <section className="bg-slate-950 border-t border-slate-800 py-16 px-6">
+      {/* ── Clients ── */}
+      <section className="bg-slate-950 border-t border-slate-800 py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-xs tracking-[0.3em] uppercase text-cyan-400 font-semibold mb-10" data-aos="fade-up">
-            Trusted by
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up">
+          <p className="label-eyebrow mb-5" data-aos="fade-up">Trusted by</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-12" data-aos="fade-up">Our Clients</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5" data-aos="fade-up">
             {[
-              { name: "Indian Army", sub: "Ministry of Defence" },
-              { name: "Indian Air Force", sub: "Ministry of Defence" },
-              { name: "Abbott India", sub: "Healthcare" },
-              { name: "IndiGo Airlines", sub: "Aviation" },
+              { name: "Defence Client", sub: "Ministry of Defence, GoI", icon: "🛡️" },
+              { name: "Aviation Defence", sub: "Ministry of Defence, GoI", icon: "✈️" },
+              { name: "Abbott India", sub: "Healthcare", icon: "🏥" },
+              { name: "IndiGo Airlines", sub: "Aviation", icon: "🛫" },
             ].map((client, i) => (
-              <div
-                key={i}
-                className="flex flex-col items-center justify-center rounded-xl border border-slate-800 bg-slate-900 py-6 px-4 gap-2"
-              >
+              <div key={i} className="flex flex-col items-center justify-center rounded-xl border border-slate-800 bg-slate-900 hover:border-cyan-500/40 transition-all duration-200 py-8 px-4 gap-3">
+                <span className="text-3xl">{client.icon}</span>
                 <p className="text-white font-semibold text-sm text-center leading-snug">{client.name}</p>
                 <p className="text-slate-500 text-xs">{client.sub}</p>
               </div>
@@ -210,13 +214,14 @@ const home = () => {
         </div>
       </section>
 
+      {/* ── Stats ── */}
       <Longcard
-        a={"4"}
-        b={"Projects delivered for Indian Army & Indian Air Force"}
+        a={"5"}
+        b={"AI products across defence & enterprise"}
         c={"MSME"}
-        d={"Registered Indian technology company — Ghaziabad & Jaipur"}
+        d={"Registered — Ghaziabad & Jaipur, India"}
         e={"2 Yrs"}
-        f={"Of focused defence & AI product delivery"}
+        f={"Of focused AI & defence product delivery"}
       />
     </main>
   );

@@ -26,7 +26,7 @@ const Maincontent = () => {
           </h1>
 
           <p className="">
-            ideaved provides cybersecurity services engineered around the security requirements of defence and government systems. From secure architecture design and threat detection to incident response, we apply the same security discipline used in our Indian Army and IAF projects to every client engagement. Based in India (Ghaziabad & Jaipur), we are an MSME with a zero-breach record across all live deployments.
+            Ideaved provides cybersecurity services engineered around the security requirements of defence and government systems. From secure architecture design and threat detection to incident response, we apply the same security discipline used in our classified defence projects to every client engagement. Based in India (Ghaziabad & Jaipur), we are an MSME with a zero-breach record across all live deployments.
           </p>
 
       

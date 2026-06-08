@@ -3,7 +3,7 @@ import React from "react";
 import Slide1 from "../../../public/Images/healthcare.jpg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Longcard from "@components/Longcard";
+
 import Industriescontent from "./Industriescontent";
 
 const page = () => {
@@ -33,14 +33,6 @@ const page = () => {
         Healthcare Industry
       </h1>{" "} */}
       <Industriescontent />
-      <Longcard
-        a={"15+"}
-        b={"Years of Experience"}
-        c={"100+"}
-        d={"Global Clients"}
-        e={"1200+"}
-        f={"Expert Developers"}
-      />
     </div>
   );
 };

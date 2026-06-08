@@ -2,18 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Ken Burns hero animation ── */
 @keyframes kenBurns {
-  0% {
-    transform: scale(1) translate(0, 0);
+  0%   { transform: scale(1) translate(0, 0); }
+  50%  { transform: scale(1.08) translate(-1%, -1%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+.animate-ken-burns { animation: kenBurns 20s ease-in-out infinite; }
+
+/* ── Base typography system ── */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
   }
-  50% {
-    transform: scale(1.08) translate(-1%, -1%);
+
+  body {
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #e2e8f0;
   }
-  100% {
-    transform: scale(1) translate(0, 0);
+
+  /* Display font for all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-space), system-ui, -apple-system, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.12;
+    color: #f8fafc;
+  }
+
+  h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+  h2 { font-size: clamp(1.75rem, 3.5vw, 2.75rem); }
+  h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 600; }
+  h4 { font-size: 1.125rem; font-weight: 600; }
+
+  p {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    line-height: 1.75;
+  }
+
+  a {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  button, input, textarea, select, label {
+    font-family: var(--font-inter), system-ui, sans-serif;
   }
 }
 
-.animate-ken-burns {
-  animation: kenBurns 20s ease-in-out infinite;
+/* ── Utility classes ── */
+@layer utilities {
+  /* Eyebrow / overline labels */
+  .label-eyebrow {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #22d3ee;
+  }
+
+  /* Display heading — uses Space Grotesk */
+  .heading-display {
+    font-family: var(--font-space), system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+  }
+
+  /* Body prose */
+  .prose-body {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: #94a3b8;
+    font-weight: 400;
+  }
+
+  /* Stat numbers */
+  .stat-number {
+    font-family: var(--font-space), system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: #22d3ee;
+  }
+
+  /* Navigation items */
+  .nav-item {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
 }

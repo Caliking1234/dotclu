@@ -7,6 +7,35 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "-apple-system", "sans-serif"],
+        display: ["var(--font-space)", "system-ui", "-apple-system", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+      },
+      fontSize: {
+        "2xs": ["0.65rem", { lineHeight: "1rem" }],
+        xs:   ["0.75rem", { lineHeight: "1.125rem" }],
+        sm:   ["0.875rem", { lineHeight: "1.5rem" }],
+        base: ["1rem",     { lineHeight: "1.75rem" }],
+        lg:   ["1.125rem", { lineHeight: "1.875rem" }],
+        xl:   ["1.25rem",  { lineHeight: "1.875rem" }],
+        "2xl":["1.5rem",   { lineHeight: "2rem" }],
+        "3xl":["1.875rem", { lineHeight: "2.25rem" }],
+        "4xl":["2.25rem",  { lineHeight: "2.5rem" }],
+        "5xl":["3rem",     { lineHeight: "1.1" }],
+        "6xl":["3.75rem",  { lineHeight: "1.05" }],
+        "7xl":["4.5rem",   { lineHeight: "1" }],
+      },
+      letterSpacing: {
+        tighter: "-0.04em",
+        tight:   "-0.025em",
+        snug:    "-0.015em",
+        normal:  "0em",
+        wide:    "0.025em",
+        wider:   "0.08em",
+        widest:  "0.2em",
+        label:   "0.15em",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

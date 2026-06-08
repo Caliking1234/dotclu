@@ -7,7 +7,7 @@ const Maincontent = () => {
         <div className="w-full p-8 lg:px-24 sm:p-12 md:p-20" data-aos="fade-up">
 
           <div className="inline-block bg-slate-900 text-cyan-400 text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
-            Proven with Indian Army
+            Proven in Active Defence Deployments
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold py-5">
@@ -15,21 +15,21 @@ const Maincontent = () => {
           </h1>
 
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            ideaved is an MSME-registered Indian technology company based in Ghaziabad and Jaipur, specialising in AI systems for defence and government. In our 2 years of operation we have delivered three AI projects for the Indian Army and one aviation platform for the Indian Air Force — all built to the security and reliability standards required for armed forces environments.
+            Ideaved Technologies is an MSME-registered Indian technology company based in Ghaziabad and Jaipur, specialising in AI systems for defence and government. In our 2 years of operation we have delivered multiple AI projects for defence agencies and government organisations — all built to the security and reliability standards required for operational environments.
           </p>
 
           {/* Delivered Projects Highlight */}
           <div className="mt-12 mb-8" data-aos="fade-up">
             <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-slate-800">
-              Delivered Projects — Indian Army (3 Projects)
+              Delivered Projects — Defence & Government
             </h2>
 
             <div className="grid grid-cols-1 gap-8">
               <div className="border-l-4 border-cyan-500 pl-6 py-4 bg-slate-50 rounded-r-xl" data-aos="fade-up">
-                <div className="text-xs font-bold tracking-widest uppercase text-cyan-600 mb-2">Army AI Project 1</div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3">AI Personalized Training for Agniveer</h3>
+                <div className="text-xs font-bold tracking-widest uppercase text-cyan-600 mb-2">Defence AI Project 01</div>
+                <h3 className="text-xl font-bold text-slate-800 mb-3">AI Personalised Training Platform</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  An AI-driven personalized training system developed for the Indian Army's Agniveer programme. The platform uses machine learning to assess individual soldier performance across physical, tactical, and weapons training modules, then adapts the training schedule and content to each recruit's pace and skill gaps. Commanding officers get a real-time readiness dashboard that tracks cohort progress and flags trainees needing remedial intervention — ensuring every Agniveer reaches operational standards within the programme timeline.
+                  An AI-driven personalized training system developed for the defence clients's Agniveer programme. The platform uses machine learning to assess individual soldier performance across physical, tactical, and weapons training modules, then adapts the training schedule and content to each recruit's pace and skill gaps. Commanding officers get a real-time readiness dashboard that tracks cohort progress and flags trainees needing remedial intervention — ensuring every Agniveer reaches operational standards within the programme timeline.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="bg-cyan-100 text-cyan-700 text-xs px-3 py-1 rounded-full font-medium">Adaptive ML</span>
@@ -39,10 +39,10 @@ const Maincontent = () => {
               </div>
 
               <div className="border-l-4 border-cyan-500 pl-6 py-4 bg-slate-50 rounded-r-xl" data-aos="fade-up">
-                <div className="text-xs font-bold tracking-widest uppercase text-cyan-600 mb-2">Army AI Project 2</div>
+                <div className="text-xs font-bold tracking-widest uppercase text-cyan-600 mb-2">Defence AI Project 02</div>
                 <h3 className="text-xl font-bold text-slate-800 mb-3">AI Risk Assessment</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  A predictive risk assessment AI platform delivered for the Indian Army that analyses multi-source operational data — terrain, weather, historical incident patterns, and field intelligence — to generate real-time mission risk scores and actionable planning recommendations. The system surfaces the highest-priority risks to decision-makers through a secure command interface, reducing cognitive load in time-critical situations and improving situational awareness across planning and operational teams.
+                  A predictive risk assessment AI platform delivered for the defence clients that analyses multi-source operational data — terrain, weather, historical incident patterns, and field intelligence — to generate real-time mission risk scores and actionable planning recommendations. The system surfaces the highest-priority risks to decision-makers through a secure command interface, reducing cognitive load in time-critical situations and improving situational awareness across planning and operational teams.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="bg-cyan-100 text-cyan-700 text-xs px-3 py-1 rounded-full font-medium">Predictive Analytics</span>
@@ -52,10 +52,10 @@ const Maincontent = () => {
               </div>
 
               <div className="border-l-4 border-cyan-500 pl-6 py-4 bg-slate-50 rounded-r-xl" data-aos="fade-up">
-                <div className="text-xs font-bold tracking-widest uppercase text-cyan-600 mb-2">Army AI Project 3</div>
+                <div className="text-xs font-bold tracking-widest uppercase text-cyan-600 mb-2">Defence AI Project 03</div>
                 <h3 className="text-xl font-bold text-slate-800 mb-3">Vehicle Tracking & Monitoring System</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  A real-time vehicle tracking and monitoring system built for the Indian Army that provides live GPS-based location tracking, route monitoring, and fleet status reporting for military vehicle convoys and logistics operations. The system includes geofencing alerts, deviation notifications, and a centralised operations dashboard — giving commanders full visibility over vehicle movements, health status, and logistical timelines across the deployment area.
+                  A real-time vehicle tracking and monitoring system built for the defence clients that provides live GPS-based location tracking, route monitoring, and fleet status reporting for military vehicle convoys and logistics operations. The system includes geofencing alerts, deviation notifications, and a centralised operations dashboard — giving commanders full visibility over vehicle movements, health status, and logistical timelines across the deployment area.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <span className="bg-cyan-100 text-cyan-700 text-xs px-3 py-1 rounded-full font-medium">GPS Tracking</span>
@@ -86,7 +86,7 @@ const Maincontent = () => {
                 <span className="font-bold text-3xl">Predictive Threat & Risk Analytics</span>
                 <br />
                 <p className="py-5 md:text-sm">
-                  Machine learning models that fuse multi-source operational data — terrain, weather, historical intelligence, and live field inputs — to generate predictive risk assessments for mission planning and tactical operations. Proven in an active Indian Army deployment with continuous accuracy improvement.
+                  Machine learning models that fuse multi-source operational data — terrain, weather, historical intelligence, and live field inputs — to generate predictive risk assessments for mission planning and tactical operations. Proven in an active defence clients deployment with continuous accuracy improvement.
                 </p>
               </div>
 
@@ -135,7 +135,7 @@ const Maincontent = () => {
             <ul className="text-base sm:text-lg text-slate-600 space-y-6">
               <li className="flex items-start gap-4" data-aos="fade-up">
                 <span className="font-bold text-2xl text-cyan-600 flex-shrink-0">•</span>
-                <span><strong>Proven Track Record with Indian Armed Forces:</strong> 3 AI systems delivered for the Indian Army; HAWK flight ops platform live with the Indian Air Force</span>
+                <span><strong>Proven Track Record with defence organisations:</strong> 3 AI systems delivered for the defence clients; HAWK flight ops platform live with the defence aviation client</span>
               </li>
               <li className="flex items-start gap-4" data-aos="fade-up">
                 <span className="font-bold text-2xl text-cyan-600 flex-shrink-0">•</span>
@@ -158,7 +158,7 @@ const Maincontent = () => {
 
           <div className="py-8 bg-gradient-to-r from-slate-900 to-cyan-900 rounded-xl p-8 my-12 text-white" data-aos="fade-up">
             <p className="text-lg font-semibold">
-              ideaved is an active defence technology partner to the Indian Armed Forces, with delivered AI systems for the Indian Army and a live flight operations platform for the Indian Air Force.
+              ideaved is an active defence technology partner to the defence organisations, with delivered AI systems for the defence clients and a live flight operations platform for the defence aviation client.
             </p>
             <p className="text-sm text-gray-300 mt-3">
               Open to defence technology partnerships and co-development agreements with allied nations and international defence organisations.

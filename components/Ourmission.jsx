@@ -6,7 +6,7 @@ const industries = [
   {
     title: "Defence & Military",
     description:
-      "AI systems for the Indian Army and Indian Air Force — Agniveer training, risk assessment, vehicle tracking, and HAWK flight operations for IAF trainees.",
+      "Mission-critical AI platforms for defence and military operations — personnel training, operational risk assessment, asset tracking, and aviation flight operations management.",
     href: "/industries/defencemilitary",
     imgSrc: "/Images/hawk-banner.jpg",
     imgAlt: "Defence & Military",

@@ -6,16 +6,20 @@ import "@styles/global.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import logo from "../public/Images/favicon.ico";
-import { Montserrat, Poppins } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 
-const monts = Montserrat({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
-const pop = Poppins({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space",
+  display: "swap",
 });
 
 const RootLayout = ({ children }) => {
@@ -32,14 +36,13 @@ const RootLayout = ({ children }) => {
     {
       title: "Products",
       module: [
-        {
-          name: "HAWK-Flight Operations",
-          link: "/Product/DotVision",
-        },
-        {
-          name: "Dot-AI/VI",
-          link: "/Product/Dotarvr",
-        },
+        { name: "HAWK – Flight Operations", link: "/Product/DotVision" },
+        { name: "Dot-AI/VI – Visual Intelligence", link: "/Product/Dotarvr" },
+        { name: "AgniAI – AI Training Platform", link: "/Product/AgniAI" },
+        { name: "RiskSense – Risk Assessment", link: "/Product/RiskSense" },
+        { name: "IdeaLytics – Analytics Platform", link: "/Product/IdeaLytics" },
+        { name: "MediSense – Clinical AI", link: "/Product/MediSense" },
+        { name: "FactoryIQ – Manufacturing Intelligence", link: "/Product/FactoryIQ" },
       ],
     },
     {
@@ -90,6 +93,14 @@ const RootLayout = ({ children }) => {
           name: "Manufacturing Industry",
           link: "/industries/manufacturingindustry",
         },
+        {
+          name: "Automobile Industry",
+          link: "/industries/automobileindustry",
+        },
+        {
+          name: "Banking & Finance",
+          link: "/industries/bankingindustry",
+        },
       ],
     },
     {
@@ -132,15 +143,33 @@ const RootLayout = ({ children }) => {
     <>
       <html lang="en">
         <head>
-          <title>Ideaved Technologies</title>
+          <title>Ideaved Technologies — Intelligent Systems for Complex Environments</title>
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="shortcut icon" href="/favicon.svg" />
-          <meta name="description" content="Advanced AI solutions for Defence, Government, and Enterprise. Personalized training and risk assessment systems powered by cutting-edge artificial intelligence." />
-          <meta property="og:title" content="Ideaved Technologies - Defence AI Solutions" />
-          <meta
-            property="og:description"
-            content="Advanced AI solutions for Defence, Government, and Enterprise. Personalized training and risk assessment systems."
-          />
+
+          {/* Primary meta */}
+          <meta name="description" content="Ideaved Technologies engineers AI products and software for defence, government, healthcare, and industry — systems that perform under operational pressure, not just in demos." />
+          <meta name="keywords" content="AI, defence technology, government AI, healthcare AI, manufacturing intelligence, India, MSME" />
+          <meta name="author" content="Ideaved Technologies" />
+
+          {/* Open Graph — controls how the link appears on WhatsApp, LinkedIn, Slack, etc. */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.ideaved.com" />
+          <meta property="og:site_name" content="Ideaved Technologies" />
+          <meta property="og:title" content="Ideaved Technologies — Intelligent Systems for Complex Environments" />
+          <meta property="og:description" content="AI products and mission-critical software for defence, government, healthcare, and industry. Engineered to perform under real-world operational pressure." />
+          <meta property="og:image" content="https://www.ideaved.com/api/og" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content="Ideaved Technologies — AI for Defence, Government & Enterprise" />
+          <meta property="og:locale" content="en_IN" />
+
+          {/* Twitter / X card */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Ideaved Technologies — Intelligent Systems for Complex Environments" />
+          <meta name="twitter:description" content="AI products and mission-critical software for defence, government, healthcare, and industry. Engineered to perform under real-world operational pressure." />
+          <meta name="twitter:image" content="https://www.ideaved.com/api/og" />
+
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -150,15 +179,15 @@ const RootLayout = ({ children }) => {
                   "@type": "Organization",
                   "name": "Ideaved Technologies",
                   "url": "https://www.ideaved.com",
-                  "logo": "/logo.png",
-                  "description": "Advanced AI solutions for Defence, Government, and Enterprise. Specializing in personalized training, risk assessment, and intelligent operations."
+                  "logo": "https://www.ideaved.com/favicon.svg",
+                  "description": "AI products and mission-critical software for defence, government, healthcare, and industrial enterprises."
                }
             `,
             }}
           />
         </head>
-        <body className="bg-slate-950">
-          <main className={monts.className}>
+        <body className={`${inter.variable} ${spaceGrotesk.variable} bg-slate-950 font-sans antialiased`}>
+          <main>
             <Navigation List1={List1} />
             {/* <div
               className={
