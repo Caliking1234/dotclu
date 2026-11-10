@@ -61,8 +61,8 @@ const ContactUs = () => {
               {
                 icon: "✉️",
                 label: "Email",
-                value: "info.ideaved@gmail.com",
-                href: "mailto:info.ideaved@gmail.com",
+                value: "sales@ideaved.com, sourabh.kaushik@ideaved.com",
+                href: "mailto:sales@ideaved.com,sourabh.kaushik@ideaved.com",
               },
               {
                 icon: "📞",

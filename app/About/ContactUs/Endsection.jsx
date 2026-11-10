@@ -13,7 +13,7 @@ const Endsection = () => {
                 <div className='text-gray-500 px-2' data-aos="fade-up">
                     <div>
                         <h1 className='text-2xl text-gray-700'>Email</h1>
-                        <p className='text-base py-2'><b>General & Sales:</b> info.ideaved@gmail.com</p>
+                        <p className='text-base py-2'><b>General & Sales:</b> sales@ideaved.com, sourabh.kaushik@ideaved.com</p>
                     </div>
                 </div>
                 <div className='text-gray-500 px-2' data-aos="fade-up">

@@ -17,8 +17,11 @@ function Footer({ List1 }) {
               India-based AI and software engineering company. Delivering mission-critical systems for defence, government, healthcare, and enterprise. MSME-registered.
             </p>
             <div className="flex flex-col gap-1 text-sm">
-              <a href="mailto:info.ideaved@gmail.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                info.ideaved@gmail.com
+              <a href="mailto:sales@ideaved.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                sales@ideaved.com
+              </a>
+              <a href="mailto:sourabh.kaushik@ideaved.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                sourabh.kaushik@ideaved.com
               </a>
               <a href="tel:+918377827753" className="text-slate-400 hover:text-white transition-colors">
                 +91 83778 27753

@@ -43,7 +43,7 @@ const page = () => {
         this Privacy Policy periodically. We will also keep older versions of
         this Privacy Policy in an archive for your review.If you have any
         questions about this Privacy Policy or our handling of the information
-        you provide us, please write to us at info.ideaved@gmail.com or ideaved,
+        you provide us, please write to us at sales@ideaved.com, sourabh.kaushik@ideaved.com or ideaved,
         Ghaziabad, Uttar Pradesh, India
       </p>
       <h1 className="text-2xl py-10 font-medium" data-aos="fade-up">Use of the Subscription Service</h1>
